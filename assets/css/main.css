@@ -350,7 +350,7 @@ header {
 }
 .work .work-images .image img {
   width: 100%;
-  height: 50%;
+  height: 500px !important;
   border-radius: 5px;
 }
 .work .work-list-area h4 {
