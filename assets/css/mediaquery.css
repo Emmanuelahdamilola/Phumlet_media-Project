@@ -1,11 +1,13 @@
-@media (min-width: 200px) and (max-width: 650px) {
+@media (min-width: 150px) and (max-width: 650px) {
   .hero {
     width: 100%;
-    height: 100%;
-    padding: 0px 20px;
+    height: 100% !important;
+    padding: 30px 20px 50px 20px;
+    margin-bottom: 30px;
+    height: 100% !important;
   }
   .hero .main-heading {
-    padding-top: 0px;
+    padding-top: 80px;
   }
   .hero .main-heading span.span {
     font-size: 16px;
@@ -21,7 +23,7 @@
   .space {
     margin-top: 0px;
   }
-  .hero .hero-img{
+  .hero .hero-img {
     display: none;
   }
 
@@ -30,79 +32,90 @@
     width: 100%;
   }
   .theme-btn {
-    font-size: 18px;
-    padding: 12px;
-    width: 100%;
+    font-size: 12px;
+    padding: 10px 18px;
+    text-align: center;
   }
-
 
   /*===== ABOUT START ========*/
   .about {
     width: 100%;
     height: 100%;
-    padding: 50px 20px;
+    padding: 30px 20px;
   }
 
   .about .images {
     margin-right: 0px;
+    height: 100%;
+    overflow-y: hidden;
   }
 
   .about .images .img img {
     width: 100%;
+    height: 350px;
     height: auto;
+    
   }
   .shape {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    width: 280px;
+    width: 220px;
     height: 80px;
     padding: 0px 10px;
     opacity: 0.9;
+    
   }
 
   .shape img {
     width: 50px;
+    height: 50px;
     margin-bottom: 5px;
   }
   .shape h4 {
     font-size: 20px;
   }
   .shape p {
-    padding-bottom: 0px;
+    padding-bottom: 20px;
+    text-align: left;
+    font-size: 12px;
   }
 
   .heading span.span {
     padding: 6px 12px;
     margin: 16px 0px;
   }
-
-  .heading .title {
-    color: var(--blue);
+  .about .items-area {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
   }
-  .heading p {
-    font-size: 18px;
-    text-align: left;
-  }
+  
   .about .items-area .icon {
-    display: none;
+    margin-right: 0; 
+    margin-bottom: 15px;
+    height: 55px;
+    width: 55px;
   }
-
   .about .items-area h4 {
-    font-size: 25px;
-    margin-top: 0;
+    font-size: 18px; 
   }
   .about .items-area p {
-    opacity: 0.8;
-    line-height: 25px;
-    font-size: 18px;
+    font-size: 14px;
   }
+  .about .theme-btn{
+    padding: 14px 24px !important;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
 
   /*===== SERVICES START ========*/
   .services {
     width: 100%;
     height: 100%;
-    padding: 50px 20px;
+    padding: 30px 20px;
   }
 
   .services .heading span.span {
@@ -112,7 +125,7 @@
   .service-box {
     padding: 0px;
     margin-top: 30px;
-    height: 300px;
+    min-height: 350px;
   }
 
   .services .service-box .icon {
@@ -122,31 +135,36 @@
   .services .service-box .icon img {
     width: 30px;
   }
-
+  /* 
   /*===== WORK START ========*/
   .work {
     width: 100%;
     height: 100%;
-    padding: 50px 20px;
+    padding: 30px 20px;
   }
   .work .heading .span {
     padding: 0px;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
   }
   .work .heading .title {
     color: var(--white);
-    font-size: 35px;
+    font-size: 25px;
     margin-bottom: 20px;
+    text-align: center;
   }
   .work .heading p {
     color: var(--white);
     opacity: 0.9;
     font-size: 18px;
     padding-bottom: 20px;
+    text-align: left;
   }
   .work .work-list-area {
     width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 16px;
   }
   .work .work-list-area .icon {
     display: none;
@@ -158,12 +176,17 @@
     padding-bottom: 10px;
   }
   .work .work-list-area h4 {
-    font-size: 20px;
-
+    font-size: 24px;
   }
   .work .work-list-area p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5rem;
+  }
+  .work .theme-btn {
+    padding: 14px 24px !important;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
   }
   .work .work-images {
     display: none;
@@ -173,7 +196,7 @@
   .faqs {
     width: 100%;
     height: 100%;
-    padding: 50px 20px;
+    padding: 50px 0px;
   }
   .space {
     margin-bottom: 20px;
@@ -181,7 +204,7 @@
 
   .accordion .accordion-button {
     font-size: 20px;
-    font-size: 800;
+    font-weight: 600;
   }
 
   .accordion-body p {
@@ -190,7 +213,7 @@
   }
 
   .faqs .faq-image img {
-    width: 800px;
+    width: 100%;
     height: auto;
   }
 
@@ -198,26 +221,39 @@
   .contact {
     width: 100%;
     height: 100%;
-    padding: 50px 20px;
+    padding: 0px;
   }
-  .contact-box{
-    padding: 0px !important;
+  .contact .heading span.span {
+    margin-top: 20px;
+  }
+  .contact-box {
+    padding: 5px 0px !important;
+    height: auto;
+    padding: 0px 30px;
   }
   .contact-box .icon i {
     font-size: 25px;
+    color: var(--gray);
   }
-  .contact-box h4{
+  .contact-box h4 {
     font-size: 18px;
   }
-  .contact-box p{
+  .contact-box p {
     font-size: 14px;
+  }
+  .contact .form-box{
+    height: auto;
+    margin-bottom: 30px;
   }
   .contact .form {
     width: 100%;
+    height: auto;
   }
   .contact .form-area {
     padding: 20px;
     width: 100%;
+    height: 100%;
+    overflow-y: hidden;
   }
   .contact .form-area h3 {
     margin-bottom: 0;
@@ -225,11 +261,13 @@
   .contact .form-area .single-input label {
     padding-top: 20px;
     margin-bottom: 5px;
+    font-size: 14px;
   }
   .contact .form-area .single-input input {
-    padding: 16px;
+    padding: 8px;
     border: 5px;
     border-radius: 5px;
+    font-size: 14px;
   }
   .contact .form-area .single-input textarea {
     padding: 8px 16px;
@@ -256,7 +294,8 @@
   .footer {
     width: 100%;
     height: 100%;
-    padding: 50px 20px;
+    padding: 30px 20px;
+    margin: 0;
   }
 
   .footer .footer-logo-area {
@@ -264,14 +303,406 @@
   }
   .footer .single-footer-item p {
     color: var(--white);
-    font-size: 18px;
+    font-size: 14px;
   }
   .space {
     margin-bottom: 0px;
   }
 
   .footer .single-footer-item .social-icon {
+    font-size: 20px;
+    padding: 0px;
+  }
+  .footer .single-footer-item h3 {
+    font-size: 20px;
+  }
+
+  .footer .single-footer-item .menu-items li a {
+    font-size: 14px;
+    padding-top: 0px;
+    font-weight: 500;
+  }
+  .footer .single-footer-item .menu-items li a:hover {
+    padding-left: 10px;
+  }
+  .footer .footer-contact-box {
+    padding-top: 12px;
+  }
+
+  .footer .footer-contact-box .footer-icon img {
+    width: 20px;
+    margin-right: 20px;
+  }
+  .footer-contact-text a {
+    font-size: 16px;
+  }
+  .copyright-area {
+    padding: 14px 0px;
+  }
+  .copyright p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 651px) and (max-width: 1000px) {
+  header .navbar {
+    padding: 30px 20px;
+  }
+  
+  header .navbar .navbar-brand.logo {
+    color: var(--blue);
+    font-size: 25px;
+  }
+
+  .hero {
+    width: 100%;
+    height: 100%;
+    padding: 30px 40px !important;
+  }
+  .hero .main-heading {
+    padding-top: 80px;
+  }
+  .hero .main-heading span.span {
+    font-size: 18px;
+  }
+  .hero .main-heading h1 {
+    font-size: 45px !important;
+    line-height: 50px;
+  }
+  .hero .main-heading p {
+    font-size: 20px;
+    text-align: left;
+  }
+  .space {
+    margin-top: 20px;
+  }
+  .hero .hero-image1 {
+    width: 100%;
+    display: flex;
+  }
+  .hero .hero-image1 img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    border-radius: 15px;
+    object-fit: cover !important;
+  }
+
+  .hero-btns {
+    display: inline-block;
+    width: 100%;
+  }
+  .theme-btn {
+    font-size: 18px;
+    padding: 10px 30px;
+  }
+
+  /*===== ABOUT START ========*/
+  .about {
+    width: 100%;
+    height: 100%;
+    padding: 30px !important;
+  }
+
+  .about .images {
+    margin-right: 0px;
+    height: 100%;
+    overflow-y: hidden;
+  }
+  .about .images .img img {
+    width: 100%;
+    height: auto;
+  }
+  .shape {
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+    width: 350px;
+    height: 100px;
+    padding: 0px 12px;
+    opacity: 0.9;
+  }
+
+  .shape img {
+    width: 70px;
+    height: 60px;
+    margin-bottom: 5px;
+  }
+  .shape h4 {
+    font-size: 25px;
+  }
+  .shape p {
+    padding-bottom: 0px;
+    font-size: 20px;
+  }
+
+  .heading span.span {
+    padding: 8px 18px;
+    margin: 16px 0px;
+    font-size: 22px;
+  }
+
+  .heading .title {
+    color: var(--blue);
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .heading p {
+    font-size: 20px;
+    text-align: justify;
+  }
+  .about .items-area .icon {
+    margin-right: 50px;
+    height: 70px;
+    width: 70px;
+    line-height: 60px;
+  }
+  .about .items-area .icon img {
+    width: 50px;
+  }
+  .about .about-text{
+    margin-left: 30px;
+  }
+  .about .items-area h4 {
     font-size: 30px;
+  }
+  .about .items-area p {
+    opacity: 0.8;
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+  /*===== SERVICES START ========*/
+  .services {
+    width: 100%;
+    height: 100%;
+    padding: 60px;
+  }
+
+  .services .heading span.span {
+    font-size: 20px;
+  }
+  .services .heading h1 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .service-box {
+    width: auto;
+    padding: 10px;
+    min-height: 400px;
+  }
+  .service-box h4 {
+    font-size: 25px;
+    padding: 20px;
+  }
+  .service-box p {
+    font-size: 18px;
+  }
+  .service-box {
+    font-size: 20px;
+  }
+  .services .service-box .icon {
+    width: 50px;
+    height: 50px;
+  }
+  .services .service-box .icon img {
+    width: 30px;
+  }
+
+  /*===== WORK START ========*/
+  .work {
+    width: 100%;
+    height: 100%;
+    padding: 30px 40px;
+  }
+  .work .heading span.span {
+    padding: 0px;
+    font-size: 20px;
+    border-bottom: 2px solid ghostwhite;
+    padding-bottom: 10px;
+  }
+  .work .heading .title {
+    padding: 10px 0px;
+    margin: 0px 0px;
+    padding-bottom: 20px;
+    font-size: 30px;
+  }
+  .work .heading p {
+    opacity: 0.9;
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .work .work-list-area {
+    width: 100%;
+  }
+  .work .work-list-area .icon {
+    padding: 10px;
+    display: flex;
+  }
+  .work .work-list-area .icon img {
+    width: 60px;
+    height: auto;
+  }
+  .work .work-images .image {
+    margin-top: 0px;
+  }
+
+  .work-list-area .work-box {
+    border-bottom: none;
+  }
+  .work .work-list-area h4 {
+    font-size: 20px;
+    padding: 0px;
+    margin-top: 20px;
+  }
+  .work .work-list-area p {
+    font-size: 18px;
+    line-height: 1.6rem;
+  }
+  .work .theme-btn{
+    width: 280px;
+  }
+  .work .work-images {
+    display: none;
+    width: 100%;
+  }
+  .work .work-images .image img {
+    width: 100%;
+  }
+
+  /*===== FAQS START ========*/
+  .faqs {
+    width: 100%;
+    height: 100%;
+    padding: 60px !important;
+  }
+  .space {
+    margin-bottom: 0px !important;
+  }
+  .faqs .heading .title {
+    font-size: 35px;
+  }
+  .faqs .heading .heading-text {
+    color: var(--gray);
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .accordion .accordion-button {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .accordion-body p {
+    font-size: 18px;
+    padding-top: 0px;
+  }
+.faqs .faqs-image-box{
+  overflow-y: hidden;
+}
+  .faqs .faq-image img {
+    width: 100%;
+    height: auto;
+    overflow-y: hidden !important;
+  }
+
+  /*===== CONTACT START ========*/
+  .contact {
+    width: 100%;
+    height: auto !important;
+    padding-top: 40px;
+    overflow-y: hidden !important;
+    margin-bottom: 40px;
+  }
+  .contact .heading span.span {
+    margin-top: 20px;
+  }
+  .contact-box {
+    padding: 5px 0px !important;
+    height: auto;
+    padding: 0px 30px;
+  }
+  .contact-box .icon i {
+    font-size: 25px;
+    color: var(--blue);
+  }
+  .contact-box h4 {
+    font-size: 20px;
+
+  }
+  .contact-box p {
+    font-size: 18px;
+  }
+  .contact .form-box{
+    height: auto;
+    margin-bottom: 30px;
+  }
+  .contact .form {
+    width: 100%;
+    height: auto;
+  }
+  .contact .form-area {
+    padding: 25px;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+  }
+  .contact .form-area h3 {
+    margin-bottom: 0;
+  }
+  .contact .form-area .single-input label {
+    padding-top: 20px;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  .contact .form-area .single-input input {
+    padding: 8px;
+    border: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+.contact .form-area .single-input textarea {
+    padding: 8px 16px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    max-width: 100%;
+    margin-bottom: 0px;
+  }
+  .contact .form-area .theme-btn {
+    background: linear-gradient(90deg, #00008b 0%, #4fa4ff 100%);
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 12px 17px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    transition: background-color 0.4s, color 0.4s;
+  }
+
+  /*===== FOOTER START ========*/
+  .footer {
+    width: 100%;
+    height: 100%;
+    padding: 30px 20px;
+    margin: 0;
+  }
+
+  .footer .footer-logo-area {
+    padding-right: 0px;
+  }
+  .footer .single-footer-item p {
+    color: var(--white);
+    font-size: 16px;
+  }
+  .space {
+    margin-bottom: 0px;
+  }
+
+  .footer .single-footer-item .social-icon {
+    font-size: 25px;
     padding: 0px;
   }
   .footer .single-footer-item h3 {
@@ -305,14 +736,14 @@
   }
 }
 
-@media (min-width: 651px) and (max-width: 1024px) {
+@media (min-width: 1001px) and (max-width: 4000px) {
   .hero {
     width: 100%;
     height: 100%;
-    padding: 60px;
+    padding: 30px 40px !important;
   }
   .hero .main-heading {
-    padding-top: 60px;
+    padding-top: 80px;
   }
   .hero .main-heading span.span {
     font-size: 18px;
@@ -339,7 +770,6 @@
     margin-top: 60px;
     border-radius: 15px;
     object-fit: cover !important;
-
   }
 
   .hero-btns {
@@ -355,13 +785,14 @@
   .about {
     width: 100%;
     height: 100%;
-    padding: 60px;
+    padding: 30px !important;
   }
 
   .about .images {
     margin-right: 0px;
+    height: 100%;
+    overflow-y: hidden;
   }
-
   .about .images .img img {
     width: 100%;
     height: auto;
@@ -370,22 +801,23 @@
     position: absolute;
     bottom: 15px;
     left: 25px;
-    width: 300px;
+    width: 350px;
     height: 100px;
     padding: 0px 12px;
     opacity: 0.9;
   }
 
   .shape img {
-    width: 60px;
+    width: 70px;
+    height: 60px;
     margin-bottom: 5px;
   }
   .shape h4 {
-    font-size: 22px;
+    font-size: 25px;
   }
   .shape p {
     padding-bottom: 0px;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .heading span.span {
@@ -401,16 +833,19 @@
   }
   .heading p {
     font-size: 20px;
-    text-align: justify;
+
   }
   .about .items-area .icon {
-    margin-right: 30px;
+    margin-right: 130px;
     height: 70px;
     width: 70px;
     line-height: 60px;
   }
   .about .items-area .icon img {
     width: 50px;
+  }
+  .about .about-text{
+    margin-left: 30px;
   }
   .about .items-area h4 {
     font-size: 30px;
@@ -438,7 +873,7 @@
   .service-box {
     width: auto;
     padding: 10px;
-    height: auto;
+    min-height: 400px;
   }
   .service-box h4 {
     font-size: 25px;
@@ -462,7 +897,7 @@
   .work {
     width: 100%;
     height: 100%;
-    padding: 60px;
+    padding: 50px 40px;
   }
   .work .heading span.span {
     padding: 0px;
@@ -488,8 +923,8 @@
     padding: 10px;
     display: flex;
   }
-  .work .work-list-area .icon img{
-    width: 80px;
+  .work .work-list-area .icon img {
+    width: 60px;
     height: auto;
   }
   .work .work-images .image {
@@ -503,17 +938,19 @@
     font-size: 20px;
     padding: 0px;
     margin-top: 20px;
-
   }
   .work .work-list-area p {
     font-size: 18px;
     line-height: 1.6rem;
   }
+  .work .theme-btn{
+    width: 280px;
+  }
   .work .work-images {
-    display: none;
+
     width: 100%;
   }
-  .work .work-images .image img{
+  .work .work-images .image img {
     width: 100%;
   }
 
@@ -521,10 +958,10 @@
   .faqs {
     width: 100%;
     height: 100%;
-    padding: 60px!important;
+    padding: 60px !important;
   }
   .space {
-    margin-bottom: 40px;
+    margin-bottom: 0px !important;
   }
   .faqs .heading .title {
     font-size: 35px;
@@ -532,7 +969,7 @@
   .faqs .heading .heading-text {
     color: var(--gray);
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .accordion .accordion-button {
     font-size: 20px;
@@ -543,118 +980,152 @@
     font-size: 18px;
     padding-top: 0px;
   }
-
+.faqs .faqs-image-box{
+  overflow-y: hidden;
+}
   .faqs .faq-image img {
     width: 100%;
     height: auto;
+    overflow-y: hidden !important;
   }
 
   /*===== CONTACT START ========*/
   .contact {
     width: 100%;
-    height: 100%;
-    padding: 60px;
+    height: auto !important;
+    padding-top: 40px;
+    overflow-y: hidden !important;
+    margin-bottom: 40px;
   }
   .contact .heading span.span {
-    font-size: 25px;
-    font-weight: 600;
+    margin-top: 20px;
   }
-  .contact .title{
-    font-size: 35px;
-  }
-  .contact .heading p{
-    font-size: 20px !important;
-  }
-  .contact-box{
-    width: 100%;
+  .contact-box {
+    padding: 5px 0px !important;
     height: auto;
-  }
-  .contact-box h4{
-    font-size: 25px;
-
-  }
-  .contact-box p{
-    font-size: 20px;
+    padding: 50px 30px;
+    overflow-y: hidden !important;
   }
   .contact-box .icon i {
-    font-size: 35px;
-    margin-right: 25px;
+    font-size: 25px;
+    color: var(--blue);
   }
-  .contact .form-area {
-    padding: 20px;
-    width: 100%;
-  } 
+  .contact-box h4 {
+    font-size: 20px;
+
+  }
+  .contact-box p {
+    font-size: 18px;
+  }
+  .contact .form-box{
+    height: 90vh;
+    overflow-y: hidden !important;
+    margin-bottom: 30px;
+  }
   .contact .form {
     width: 100%;
-    padding: 0px;
+    height: auto;
+    margin-top: 40px;
+    overflow-y: hidden !important;
+    padding: 20px;
+  }
+  .contact .form-area {
+    padding: 25px;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden !important;
   }
   .contact .form-area h3 {
     margin-bottom: 0;
-    padding-top: 20px;
+  }
+  .form .form-box{
+    overflow: hidden;
   }
   .contact .form-area .single-input label {
     padding-top: 20px;
     margin-bottom: 5px;
-    font-size: 20px;
+    font-size: 16px;
   }
   .contact .form-area .single-input input {
-    padding: 20px 12px;
-    font-size: 20px;
+    padding: 8px;
+    border: 5px;
+    border-radius: 5px;
+    font-size: 16px;
   }
-  .contact .form-area .single-input textarea {
-    padding: 20px 12px;
+.contact .form-area .single-input textarea {
+    padding: 8px 16px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
     max-width: 100%;
     margin-bottom: 0px;
   }
   .contact .form-area .theme-btn {
-    font-size: 22px;
-    padding: 12px 25px;
+    background: linear-gradient(90deg, #00008b 0%, #4fa4ff 100%);
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 12px 17px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    transition: background-color 0.4s, color 0.4s;
   }
 
   /*===== FOOTER START ========*/
   .footer {
     width: 100%;
     height: 100%;
-    padding: 60px;
+    padding: 30px 20px;
+    margin: 0;
+    /* display: none; */
   }
 
   .footer .footer-logo-area {
-    padding-right: 10px;
-  }
-  .footer .footer-logo-area .footer-logo a{
-    font-size: 30px;
+    padding-right: 0px;
   }
   .footer .single-footer-item p {
-    font-size: 20px;
-    text-align: left;
+    color: var(--white);
+    font-size: 16px;
   }
   .space {
     margin-bottom: 0px;
   }
-  .footer .single-footer-item .social-icon i {
-    font-size: 25px !important;
-    margin-top: 0;
+
+  .footer .single-footer-item .social-icon {
+    font-size: 25px;
+    padding: 0px;
   }
   .footer .single-footer-item h3 {
-    font-size: 30px;
+    font-size: 25px;
   }
+
   .footer .single-footer-item .menu-items li a {
-    font-size: 20px;
+    font-size: 16px;
+    padding-top: 0px;
+    font-weight: 500;
+  }
+  .footer .single-footer-item .menu-items li a:hover {
+    padding-left: 10px;
   }
   .footer .footer-contact-box {
-    padding-top: 5px;
+    padding-top: 12px;
   }
+
   .footer .footer-contact-box .footer-icon img {
     width: 20px;
-    margin-right: 10px;
+    margin-right: 20px;
   }
   .footer-contact-text a {
-    font-size: 20px;
+    font-size: 16px;
   }
   .copyright-area {
-    padding: 12px 0px;
+    padding: 14px 0px;
   }
   .copyright p {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
+
+
