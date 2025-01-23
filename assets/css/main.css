@@ -70,6 +70,17 @@ section {
   color: inherit;
 }
 
+.button{
+  border-radius: 0;
+  background-color: var(--dark-green);
+  color: var(--white);
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+}
+.button:hover{
+  background-color: var(--green);
+  color: var(--white);
+}
 /*===== HEADER SECTION========*/
 header .navbar {
   padding: 20px;
@@ -184,17 +195,27 @@ header .navbar .nav-link:hover {
 .about {
     padding: 80px 0;
     margin-bottom: 50px;
+    margin-top: 50px;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url(/images/image2.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    
   }
-  
-  .about .images .img img {
+  .about .images{
+    height: 100%;
+  }
+  .about .images img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
   }
   
   .heading h1.title{
-    font-size: 28px;
-    color: var(--dark-green);
+    font-size: 50px;
+    color: var(--white);
+    font-weight: 500;
   }
   .heading span.span {
     background: var(--dark-green);
@@ -205,14 +226,12 @@ header .navbar .nav-link:hover {
     color: var(--white);
   }
   
-  .heading .title {
-    color: var(--green);
-  }
   .about .items-area {
     margin-top: 30px;
   }
   .heading p{
-    font-size: 16px;
+    font-size: 14px;
+    color: var(--white);
   }
 
   .about .theme-btn{
@@ -223,7 +242,6 @@ header .navbar .nav-link:hover {
 
 /*===== SERVICES START ========*/
 .services {
-    perspective: 1000px;
     background: var(--white);
     padding-top: 20px;
   }
@@ -236,14 +254,35 @@ header .navbar .nav-link:hover {
     margin-bottom: 16px;
     color: var(--white);
   }
+
+.services .card{
+  width: 250px;
+  min-width: 250px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--green);
+  border: none;
+  cursor: pointer;
+ 
+}
+.card .card-body{
+  overflow: hidden;
+}
+.card .card-body h5{
+  color: var(--white);
+  font-size: 1rem;
+  text-align: center;
   
+}
+/*   
   .service-box {
     position: relative;
     padding: 25px;
     transition: transform 0.4s, box-shadow 0.4s;
     margin-top: 30px;
     height: 100px !important;
-    /* max-height: 200px; */
     background-color: var(--green);
     border-radius: 5px;
     overflow: hidden;
@@ -289,7 +328,7 @@ header .navbar .nav-link:hover {
   }
   .services .service-box .service-box-link {
     color: var(--light-green);
-  }
+  } */
   
 
   
