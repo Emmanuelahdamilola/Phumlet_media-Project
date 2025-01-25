@@ -354,6 +354,7 @@ header .navbar .nav-link:hover {
 /*===== FOOTER START ========*/
 .footer{
   background-color: var(--dark-green);
+  padding: 50px;
 }
 .footer .logo-box{
   background-color: var(--white);
@@ -373,4 +374,11 @@ header .navbar .nav-link:hover {
 }
 .footer p{
   color: var(--light);
+}
+
+.footer-links h4{
+  color: var(--light);
+}
+.footer-links .lists a{
+  color: var(white);
 }
