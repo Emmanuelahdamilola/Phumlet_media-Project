@@ -297,6 +297,15 @@ header .navbar .nav-link:hover {
 }
   
 
+@media (max-width:768px) {
+  .service .card{
+    width: 100%;
+  }
+  .service .card .service-list .service-link{
+    border-bottom: 0;
+    padding-top: 10px;
+  }
+}
 
 /* --===== TESTIMONIAL START ========-- */
 .testimonial {
@@ -372,6 +381,37 @@ header .navbar .nav-link:hover {
   color: var(--white);
 }
 
+@media (max-width:768px){
+  .contact{
+    padding: 10px;
+  }
+  .container{
+    padding: 0 !important;
+  }
+  .contact-text{
+    min-width: 100%;
+    padding: 20px;
+    margin-top: 30px;
+  }
+  .contact-icon{
+    margin-right: 0px;
+  }
+  .contact-icon i{
+    color: var(--light);
+    font-size: 18px;
+  }
+  .contact-text p{
+    font-size: 14px;
+  }
+  .contact-text h5{
+    font-size: 14px;
+  }
+  
+  form{
+    width: 100%;
+  }
+}
+
 /*===== FOOTER START ========*/
 .footer{
   background-color: var(--dark-green);
@@ -400,6 +440,35 @@ header .navbar .nav-link:hover {
 .footer-links h4{
   color: var(--light);
 }
-.footer-links .lists a{
-  color: var(white);
+
+.links-box i{
+  color:#34dc75;
+}
+.links-box a{
+  color: var(--light);
+  font-weight: 300;
+  transition: .3s ease-in-out;
+}
+.links-box a:hover{
+  color: #34dc75;
+  text-decoration: underline;
+}
+
+@media (max-width:768px){
+  .footer{
+    padding: 30px;
+  }
+  .footer .logo-box{
+    width: 250px;
+    min-width: 250px;
+    padding-left: 10px;
+  }
+  .footer .logo-box img{
+    width: 120px;
+    height: 80px;
+  }
+  .footer .logo-box h1{
+    font-size: 25px;
+
+  }
 }
