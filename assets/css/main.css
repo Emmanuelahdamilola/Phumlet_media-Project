@@ -7,7 +7,7 @@
   --dark-green: #046e2b;
   --gold: #F5D269;
   --white: #ffffff;
-  --gray: #918d8d;
+  --gray: #d5d4d4;
   --light: #f8f8ff;
   --black: #000000;
 }
@@ -241,41 +241,62 @@ header .navbar .nav-link:hover {
 }
 
 /*===== SERVICES START ========*/
-.services {
-    background: var(--white);
-    padding-top: 20px;
-  }
-  
-  .services .heading .span {
-    background: var(--dark-green);
-    padding: 6px 12px;
-    display: inline-block;
-    border-radius: 5px;
-    margin-bottom: 16px;
-    color: var(--white);
-  }
-
-.services .card{
-  width: 250px;
-  min-width: 250px;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--green);
+.service{
+  background: var(--light);
+  height: auto;
+  margin-bottom: 30px;
+}
+.service .heading-box p{
+  color: var(--green) !important;
+}
+.service .card{
+  background: transparent;
   border: none;
-  cursor: pointer;
- 
+  width: 250px;
+  padding: 20px;
+
 }
-.card .card-body{
-  overflow: hidden;
-}
-.card .card-body h5{
-  color: var(--white);
-  font-size: 1rem;
+.service .card i{
+  font-size: 50px;
+  color: var(--green);
   text-align: center;
-  
+  padding-right: 15px;
 }
+.service .card .card-body{
+  text-align: center;
+}
+.service .card .card-body h5{
+  color: var(--dark-green);
+}
+.service .card .service-list i{
+  font-size: 20px;
+  margin-right: 10px;
+}
+.service .card .service-list a{
+  color: var(--green);
+  font-size: 14px;
+  font-weight: 200px;
+  padding-bottom: 10px;
+  transition: .3s ease-in-out;
+}
+.service .card .service-list a:hover{
+  color: var(--dark-green);
+}
+
+.service .card .service-list .service-link{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid var(--gray);
+  padding-top: 20px;
+  width: auto;
+
+}
+.service .card .service-list .service-link:last-child{
+  border-bottom: 0;
+}
+  
+
 
 /* --===== TESTIMONIAL START ========-- */
 .testimonial {
