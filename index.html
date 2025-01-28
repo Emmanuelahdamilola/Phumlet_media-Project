@@ -1,484 +1,462 @@
 <!DOCTYPE html>
 <html lang="en" style="scroll-behavior: smooth;">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Phumlet Media</title>
 
-    <!--===== CSS ========-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css" integrity="sha512-uHuCigcmv3ByTqBQQEwngXWk7E/NaPYP+CFglpkXPnRQbSubJmEENgh+itRDYbWV0fUZmUz7fD/+JDdeQFD5+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Phumlet Media</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css" integrity="sha512-RWhcC19d8A3vE7kpXq6Ze4GcPfGe3DQWuenhXAbcGiZOaqGojLtWwit1eeM9jLGHFv8hnwpX3blJKGjTsf2HxQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--===== CSS ========-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css"
+    integrity="sha512-uHuCigcmv3ByTqBQQEwngXWk7E/NaPYP+CFglpkXPnRQbSubJmEENgh+itRDYbWV0fUZmUz7fD/+JDdeQFD5+A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css"
+    integrity="sha512-RWhcC19d8A3vE7kpXq6Ze4GcPfGe3DQWuenhXAbcGiZOaqGojLtWwit1eeM9jLGHFv8hnwpX3blJKGjTsf2HxQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.css" integrity="sha512-UhvuUthI9VM4N3ZJ5o1lZgj2zNtANzr3zyucuZZDy67BO6Ep5+rJN2PST7kPj+fOI7M/7wVeYaSaaAICmIQ4sQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.css"
+    integrity="sha512-UhvuUthI9VM4N3ZJ5o1lZgj2zNtANzr3zyucuZZDy67BO6Ep5+rJN2PST7kPj+fOI7M/7wVeYaSaaAICmIQ4sQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <link rel="stylesheet" href="assets/css/main.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="stylesheet" href="assets/css/main.css">
 
 
-    <!-- <link rel="stylesheet" href="assets/css/mediaquery.css"> -->
+  <!-- <link rel="stylesheet" href="assets/css/mediaquery.css"> -->
 
-    <!--===== JQUERY ========-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!--===== JQUERY ========-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  </head>
-  <body class="body">
-    <div class="top-links">
-      <div class="container py-2">
-  <div class=" d-flex justify-content-between align-item-center">
-  <div class="mail">
-    <p>
-      <i class="bi bi-envelope pe-1"></i>
-      ojololaomowumi@gmail.com
-    </p>
-  </div>
-  <div class="socials">
-    <a href="#">
-      <i class="bi bi-whatsapp"></i>
-    </a>
-    <a href="#">
-      <i class="bi bi-facebook"></i>
-    </a>
-    <a href="#">
-      <i class="bi bi-instagram"></i>
-    </a>
-    <a href="#">
-      <i class="bi bi-tiktok"></i>
-    </a>
-  </div>
-</div>
+</head>
+
+<body class="body">
+  <div class="top-links">
+    <div class="container py-2">
+      <div class=" d-flex justify-content-between align-item-center">
+        <div class="mail">
+          <p>
+            <i class="bi bi-envelope pe-1"></i>
+            ojololaomowumi@gmail.com
+          </p>
+        </div>
+        <div class="socials">
+          <a href="#">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="#">
+            <i class="bi bi-tiktok"></i>
+          </a>
+        </div>
       </div>
-      
     </div>
 
-    <nav>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container">
-          <a class="navbar-brand" href="#">PHUMLET MEDIA</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav mx-auto">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </div>
-          </div>
+  </div>
+
+  <!--===== HEAD STARTS ========-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand brand-logo" href="#">PHUMLET MEDIA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mx-auto">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="#">FAQ</a>
+          <a class="nav-link" href="#">Contact Us</a>
+
         </div>
-      </nav>
-    </nav>
-    <!--===== HEAD STARTS ========-->
-    <header class="fixed-top shadow">
-
-
-        <!-- <nav class="navbar navbar-expand-lg bg-light ">
-            <div class="container">
-              <a class="navbar-brand fw-bolder text-uppercase logo" href="#">Plumlet Media</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav m-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#hero">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                  </li>
-
-                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Services
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Service 1</a></li>
-                      <li><a class="dropdown-item" href="#">Service 2</a></li>
-                      <li><a class="dropdown-item" href="#">Service 3</a></li>
-                      <li><a class="dropdown-item" href="#">Service 4</a></li>
-                    </ul>
-                  </li> 
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#faqs">FAQ</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#faqs">News</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#contact">Contact</a>
-                  </li>
-                </ul>
-                    <div class=" d-flex align-items-center aos-init" data-aos="fade-right" data-aos-duration="600">
-                      <div class="theme-btn">
-                        <a href="signup.html" >Apply Now</a>
-                      </div>
-              </div>
-            </div>
-              </div>
-            </div>
-          </nav> -->
-    </header>
-    <!--===== HEAD END ========-->
-
-    <!--===== HERO STARTS ========-->
-    <section class="hero">
-      <div class="container d-flex justify-content-center align-items-center">
-        <div data-aos="zoom-out-up" data-aos-duration="500">
-          <h1 class="display-6 fw-bold text-center">Simplifying Your National Identification Needs</h1>
-          <p class="fs-6 pt-2 text-center" data-aos="zoom-out-up" data-aos-duration="700">Effortlessly manage your NIN updates, registrations, and official documentation with Phumlet Media.</p>
-          <div class="d-flex gap-2 col-8 col-md-6 col-lg-6 mx-auto" data-aos="fade-down-right" data-aos-duration="900">
-            <button class="btn btn-sm border border-2 text-white" type="button">Apply Now</button>
-            <button class="btn btn-sm border border-2 text-white" type="button">Contact Us</button>
-          </div>
+        <div class="apply-btn">
+          <a href="#" class="btn"
+          style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+          APPLY NOW
+          <i class="bi bi-arrow-right-circle ps-1"></i>
+        </a>
         </div>
       </div>
-    </section>
-    <!--===== HERO END ========-->
-  
 
-    <!--===== ABOUT START ========-->
-    <div class="about bg-white" id="about">
-      <div class="container">
-        <div class="card mb-3 shadow-0" style="width: 100%;">
-          <div class="row g-0">
-            <div class="col-md-4 d-flex img align-items-center">
-              <img src="images/NIMC-1200x1200-1-1024x1024.jpeg" class="img-fluid rounded-start" alt="...">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <h5 class="card-title display-5">About Us</h5>
-                <p class="card-text">At Phumlet Media, we believe that accessing critical personal and business services should be simple and efficient. That’s why we offer a wide range of solutions tailored to your needs, including NIN registration and updates, business incorporation, certificate retrieval, and much more.</p>
-                <h4>What Sets Us Apart?</h4>
-                  <ul>
-                    <li class="about-list">
-                      <i class="bi bi-award"></i>
-                      <p><strong>Expertise You Can Trust:</strong> Years of experience handling personal and corporate documentation.
-                      </p>
-                    </li>
-                    <li class="about-list">
-                      <i class="bi bi-award"></i>
-                      <p><strong>Customer-Centered Service:</strong> We prioritize your convenience and satisfaction.</p>
-                    </li>
-                    <li class="about-list">
-                      <i class="bi bi-award"></i>
-                      <p><strong>Efficiency at Its Best:</strong> We deliver quick, reliable, and accurate services to save you time.</p>
-                    </li>
-                  </ul>
-                <h4>Our Vision:</h4>
-                <p class="card-text fs-4"><small class="text-body-secondary">To become the go-to platform for hassle-free documentation services in Nigeria and beyond.
+    </div>
+  </nav>
+  <!--===== HEAD END ========-->
+
+  <!--===== HERO STARTS ========-->
+  <section class="hero">
+    <div class="container d-flex justify-content-center align-items-center">
+      <div class="hero-heading" data-aos="zoom-out-up" data-aos-duration="500">
+        <h1 class="display-6 fw-bold text-center">Simplifying Your National Identification Needs</h1>
+        <p class="fs-6 pt-2 text-center" data-aos="zoom-out-up" data-aos-duration="700">Effortlessly manage your NIN
+          updates, registrations, and official documentation with Phumlet Media.</p>
+        <div class="d-flex justify-content-center gap-2 col-8 col-md-6 col-lg-6 mx-auto" data-aos="fade-down-right">
+          <a href="#" class="btn btn-sm border border-2 text-white" type="button">Apply Now</a>
+          <a href="#" class="btn btn-sm border border-2 text-white" type="button">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--===== HERO END ========-->
+
+
+  <!--===== ABOUT START ========-->
+  <div class="about bg-white" id="about">
+    <div class="container">
+      <div class="card mb-3 shadow-0" style="width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4 d-flex img align-items-center">
+            <img src="images/NIMC-1200x1200-1-1024x1024.jpeg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title display-5">About Us</h5>
+              <p class="card-text">At Phumlet Media, we believe that accessing critical personal and business services
+                should be simple and efficient. That’s why we offer a wide range of solutions tailored to your needs,
+                including NIN registration and updates, business incorporation, certificate retrieval, and much more.
+              </p>
+              <h4>What Sets Us Apart?</h4>
+              <ul>
+                <li class="about-list">
+                  <i class="bi bi-award"></i>
+                  <p><strong>Expertise You Can Trust:</strong> Years of experience handling personal and corporate
+                    documentation.
+                  </p>
+                </li>
+                <li class="about-list">
+                  <i class="bi bi-award"></i>
+                  <p><strong>Customer-Centered Service:</strong> We prioritize your convenience and satisfaction.</p>
+                </li>
+                <li class="about-list">
+                  <i class="bi bi-award"></i>
+                  <p><strong>Efficiency at Its Best:</strong> We deliver quick, reliable, and accurate services to save
+                    you time.</p>
+                </li>
+              </ul>
+              <h4>Our Vision:</h4>
+              <p class="card-text fs-4"><small class="text-body-secondary">To become the go-to platform for hassle-free
+                  documentation services in Nigeria and beyond.
 
                 </small></p>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--===== ABOUT END ========-->
-
-    <!--===== SERVICES START ========-->
-    <div class="service" id="service">
-      <div class="container ">
-        <div class="text-center heading-box">
-          <p class="display-5">Our Core Services</p>
-          <h5 class="fw-bold mb-4 fs-5">Explore our wide range of services tailored to meet your needs</h5>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-sm-12 col-md-3 col-lg-3">
-            <div class="card">
-              <i class="bi bi-person-vcard"></i>
-              <div class="card-body">
-                <h5 class="card-title">NIN Services</h5>
-                <p class="card-text">We provide seamless support for all your NIN needs:</p>
-              </div>
-              <div class="service-list">
-                <div class="service-link">
-                  <i class="bi bi-check-circle"></i>
-                  <a href="#" class="card-link">New NIN Enrollment</a>
-                </div>
-                <div class="service-link">
-                  <i class="bi bi-check-circle"></i>
-                  <a href="#" class="card-link">Premium Plastic or Laminated Cards</a>
-                </div>
-                <div class="service-link">
-                  <i class="bi bi-check-circle"></i>
-                  <a href="#" class="card-link">Slip Retrieval and Error Resolution</a>
-                </div>
-                <div class="service-link">
-                  <i class="bi bi-check-circle"></i>
-                  <a href="#" class="card-link">Validation and Verification Services
-                  </a>
-                </div>
-                <div class="service-link">
-                  <i class="bi bi-check-circle"></i>
-                  <a href="#" class="card-link">Updates: Name, Date of Birth, Address, and Phone Number
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-3 col-lg-3">
-            <div class="card ">
-              <i class="bi bi-briefcase-fill"></i>
-              <div class="card-body">
-                <h5 class="card-title">Business Services</h5>
-                <p class="card-text">Streamline your business setup and compliance with:</p>
-              </div>
-              <div class="service-list">
-                <div class="service-link">
-                  <i class="bi bi-check-circle"></i>
-                  <a href="#" class="card-link">Corporate Affairs Commission (CAC) Registration
-                  </a>
-                </div>
-                <div class="service-link">
-                  <i class="bi bi-check-circle"></i>
-                  <a href="#" class="card-link">Tax Identification Number (TIN) Registration</a>
-                </div>
-                <div class="service-link">
-                  <i class="bi bi-check-circle"></i>
-                  <a href="#" class="card-link">Tax Promax Assistance</a>
-                </div>
-                <div class="service-link">
-                  <i class="bi bi-check-circle"></i>
-                  <a href="#" class="card-link">SCUML Compliance Services
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-3 col-lg-3">
-            <div class="card">
-              <i class="bi bi-mortarboard-fill"></i>
-              <div class="card-body">
-                <h5 class="card-title">Academic Documentation</h5>
-                <p class="card-text">Simplify your academic processes with:</p>
-              </div>
-              <div class="service-list">
-                <div class="service-link">
-                  <i class="bi bi-check-circle"></i>
-                  <a href="#" class="card-link">Certificate Retrieval (WAEC/NECO)</a>
-                </div>
-                <div class="service-link">
-                  <i class="bi bi-check-circle"></i>
-                  <a href="#" class="card-link">WAEC and NECO Exam Registration</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-3 col-lg-3">
-            <div class="card">
-              <i class="bi bi-badge-tm-fill"></i>
-              <div class="card-body">
-                <h5 class="card-title">Specialized Services</h5>
-                <p class="card-text">Safeguard your brand and ideas with our:</p>
-              </div>
-              <div class="service-list">
-                <div class="service-link">
-                  <i class="bi bi-check-circle"></i>
-                  <a href="#" class="card-link">Trademark Registration</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-         
-      </div>
-    </div>
-<!--===== SERVICES END ========-->
-
-<!--===== TESTIMONIAL START ========-->
-<section class="testimonial mb-5 bg-white">
-  <div class="container">
-    <div class="text-center testimony-heading">
-      <h5 class="text-uppercase pt-5 fw-bold">Testimonial</h5>
-      <p class="display-5">Our Clients Say</p>
-      <h5 class="fw-bold mb-4 fs-3">Don't take our word for it, Take theirs ...</h5>
-    </div>
-    <div class="row g-4">
-      <div class="col-sm-12 col-md-5 col-lg-5 order-sm-last" data-aos="zoom-in-left" data-aos-duration="800">
-        <img src="/images/NIMC-office.jpg" class="img-fluid" alt="...">
-      </div>
-      <div class="col-sm-12 col-md-7 col-lg-7 order-sm-first testimony-box">
-        <div class="d-flex justify-content-center order-sm-1">
-          <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active px-4" data-bs-interval="10000">
-                <div class="text-center mt-5">
-                  <div class="d-inline-flex align-items-center">
-                    <img src="images/lucas-lenzi-b5zPZ8_7vhw-unsplash.jpg" alt="">
-                    <h3>Lucas Lenzi</h3>
-                  </div>
-                <p>“I couldn’t believe how fast they resolved my NIN issue. Thank you, Phumlet Media!”</p>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <div class="text-center mt-5">
-                  <div class="d-inline-flex align-items-center text-box">
-                    <img src="images/charlie-green-3JmfENcL24M-unsplash.jpg" alt="">
-                    <h3>Charlie Green</h3>
-                  </div>
-                <p>"Professional and efficient. My CAC registration was handled without stress!"</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="text-center mt-5">
-                  <div class="d-inline-flex align-items-center">
-                    <img src="images/batel-studio-ttSRjiYG_WM-unsplash.jpg" alt="">
-                    <h3>Batel Studio</h3>
-                  </div>
-                <p>"Highly recommend their services to anyone who values speed and accuracy."</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="text-center mt-5">
-                  <div class="d-inline-flex align-items-center">
-                    <img src="images/binh-ly-k_4A59MzZTY-unsplash.jpg" alt="">
-                    <h3>Binh Ly</h3>
-                  </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis voluptate fugiat nemo molestiae odio</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="text-center mt-5">
-                  <div class="d-inline-flex align-items-center">
-                    <img src="images/samuel-myles-mTu4MYFPV1Q-unsplash.jpg" alt="">
-                    <h3>Samuel Myles</h3>
-                  </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis voluptate fugiat nemo molestiae odio expedita facilis tenetur!</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+  <!--===== ABOUT END ========-->
 
-<!--===== CONTACT START ========-->
-<section id="contact" class="contact">
-  <div class="container">
-    <div class="row gy-5">
-      <div class="col-sm-12 col-md-6 col-lg-6">
-        <form class="bg-white py-4 px-4 rounded shadow ">
-          <div>
-            <h5 class="text-uppercase pt-3 fw-bold">Ask Us Anything</h5>
-            <p class="display-5 pb-3">Write Message</p>
-            <h6 class="fw-bold">Personal Details</h6>
-          </div>
-          <div class="row mb-3">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="First name" aria-label="First name" required>
+  <!--===== SERVICES START ========-->
+  <div class="service" id="service">
+    <div class="container ">
+      <div class="text-center heading-box">
+        <p class="display-5">Our Core Services</p>
+        <h5 class="fw-bold mb-4 fs-5">Explore our wide range of services tailored to meet your needs</h5>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-3 col-lg-3">
+          <div class="card">
+            <i class="bi bi-person-vcard"></i>
+            <div class="card-body">
+              <h5 class="card-title">NIN Services</h5>
+              <p class="card-text">We provide seamless support for all your NIN needs:</p>
             </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" required>
+            <div class="service-list">
+              <div class="service-link">
+                <i class="bi bi-check-circle"></i>
+                <a href="#" class="card-link">New NIN Enrollment</a>
+              </div>
+              <div class="service-link">
+                <i class="bi bi-check-circle"></i>
+                <a href="#" class="card-link">Premium Plastic or Laminated Cards</a>
+              </div>
+              <div class="service-link">
+                <i class="bi bi-check-circle"></i>
+                <a href="#" class="card-link">Slip Retrieval and Error Resolution</a>
+              </div>
+              <div class="service-link">
+                <i class="bi bi-check-circle"></i>
+                <a href="#" class="card-link">Validation and Verification Services
+                </a>
+              </div>
+              <div class="service-link">
+                <i class="bi bi-check-circle"></i>
+                <a href="#" class="card-link">Updates: Name, Date of Birth, Address, and Phone Number
+                </a>
+              </div>
             </div>
           </div>
-          <div class="mb-3">
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3">
+          <div class="card ">
+            <i class="bi bi-briefcase-fill"></i>
+            <div class="card-body">
+              <h5 class="card-title">Business Services</h5>
+              <p class="card-text">Streamline your business setup and compliance with:</p>
+            </div>
+            <div class="service-list">
+              <div class="service-link">
+                <i class="bi bi-check-circle"></i>
+                <a href="#" class="card-link">Corporate Affairs Commission (CAC) Registration
+                </a>
+              </div>
+              <div class="service-link">
+                <i class="bi bi-check-circle"></i>
+                <a href="#" class="card-link">Tax Identification Number (TIN) Registration</a>
+              </div>
+              <div class="service-link">
+                <i class="bi bi-check-circle"></i>
+                <a href="#" class="card-link">Tax Promax Assistance</a>
+              </div>
+              <div class="service-link">
+                <i class="bi bi-check-circle"></i>
+                <a href="#" class="card-link">SCUML Compliance Services
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3">
+          <div class="card">
+            <i class="bi bi-mortarboard-fill"></i>
+            <div class="card-body">
+              <h5 class="card-title">Academic Documentation</h5>
+              <p class="card-text">Simplify your academic processes with:</p>
+            </div>
+            <div class="service-list">
+              <div class="service-link">
+                <i class="bi bi-check-circle"></i>
+                <a href="#" class="card-link">Certificate Retrieval (WAEC/NECO)</a>
+              </div>
+              <div class="service-link">
+                <i class="bi bi-check-circle"></i>
+                <a href="#" class="card-link">WAEC and NECO Exam Registration</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3">
+          <div class="card">
+            <i class="bi bi-badge-tm-fill"></i>
+            <div class="card-body">
+              <h5 class="card-title">Specialized Services</h5>
+              <p class="card-text">Safeguard your brand and ideas with our:</p>
+            </div>
+            <div class="service-list">
+              <div class="service-link">
+                <i class="bi bi-check-circle"></i>
+                <a href="#" class="card-link">Trademark Registration</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--===== SERVICES END ========-->
+
+  <!--===== TESTIMONIAL START ========-->
+  <section class="testimonial mb-5 bg-white">
+    <div class="container">
+      <div class="text-center testimony-heading">
+        <h5 class="text-uppercase pt-5 fw-bold">Testimonial</h5>
+        <p class="display-5">Our Clients Say</p>
+        <h5 class="fw-bold mb-4 fs-3">Don't take our word for it, Take theirs ...</h5>
+      </div>
+      <div class="row g-4">
+        <div class="col-sm-12 col-md-5 col-lg-5 order-sm-last" data-aos="zoom-in-left" data-aos-duration="800">
+          <img src="/images/NIMC-office.jpg" class="img-fluid" alt="...">
+        </div>
+        <div class="col-sm-12 col-md-7 col-lg-7 order-sm-first testimony-box">
+          <div class="d-flex justify-content-center order-sm-1">
+            <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active px-4" data-bs-interval="10000">
+                  <div class="text-center mt-5">
+                    <div class="d-inline-flex align-items-center">
+                      <img src="images/lucas-lenzi-b5zPZ8_7vhw-unsplash.jpg" alt="">
+                      <h3>Lucas Lenzi</h3>
+                    </div>
+                    <p>“I couldn’t believe how fast they resolved my NIN issue. Thank you, Phumlet Media!”</p>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <div class="text-center mt-5">
+                    <div class="d-inline-flex align-items-center text-box">
+                      <img src="images/charlie-green-3JmfENcL24M-unsplash.jpg" alt="">
+                      <h3>Charlie Green</h3>
+                    </div>
+                    <p>"Professional and efficient. My CAC registration was handled without stress!"</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="text-center mt-5">
+                    <div class="d-inline-flex align-items-center">
+                      <img src="images/batel-studio-ttSRjiYG_WM-unsplash.jpg" alt="">
+                      <h3>Batel Studio</h3>
+                    </div>
+                    <p>"Highly recommend their services to anyone who values speed and accuracy."</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="text-center mt-5">
+                    <div class="d-inline-flex align-items-center">
+                      <img src="images/binh-ly-k_4A59MzZTY-unsplash.jpg" alt="">
+                      <h3>Binh Ly</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis voluptate fugiat nemo
+                      molestiae odio</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="text-center mt-5">
+                    <div class="d-inline-flex align-items-center">
+                      <img src="images/samuel-myles-mTu4MYFPV1Q-unsplash.jpg" alt="">
+                      <h3>Samuel Myles</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis voluptate fugiat nemo
+                      molestiae odio expedita facilis tenetur!</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--===== CONTACT START ========-->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="row gy-5">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <form class="bg-white py-4 px-4 rounded shadow ">
+            <div>
+              <h5 class="text-uppercase pt-3 fw-bold">Ask Us Anything</h5>
+              <p class="display-5 pb-3">Write Message</p>
+              <h6 class="fw-bold">Personal Details</h6>
+            </div>
+            <div class="row mb-3">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="First name" aria-label="First name" required>
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" required>
+              </div>
+            </div>
+            <div class="mb-3">
               <input type="emailtext" class="form-control" placeholder="Email" aria-label="Email" required>
-          </div>
-          <div class="mb-3">
+            </div>
+            <div class="mb-3">
               <input type="tel" class="form-control" placeholder="Phone" aria-label="Phone" required>
-          </div>
-          <div class="mb-3">
+            </div>
+            <div class="mb-3">
               <input type="text" class="form-control" placeholder="Subject " aria-label="Subject" required>
-          </div>
-          <div class="mb-3">
-            <label for="aboutUs" class="form-label">How did you heard about us?</label>
-            <select id="aboutUs" class="form-select" required>
-              <option></option>
-              <option>Web</option>
-              <option>Google</option>
-              <option>Facebook</option>
-              <option>Friend</option>
-              <option>Newspaper</option>
-            </select>
+            </div>
+            <div class="mb-3">
+              <label for="aboutUs" class="form-label">How did you heard about us?</label>
+              <select id="aboutUs" class="form-select" required>
+                <option></option>
+                <option>Web</option>
+                <option>Google</option>
+                <option>Facebook</option>
+                <option>Friend</option>
+                <option>Newspaper</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-message">
+              <i class="bi bi-send me-2"></i>
+              SEND MESSAGE</button>
+          </form>
         </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message" rows="3" required></textarea>
-        </div>
-          <button type="submit" class="btn btn-message">
-           <i class="bi bi-send me-2"></i>
-            SEND MESSAGE</button>
-        </form>
-      </div>
 
-      <div class="col-sm-12 col-md-6 col-lg-6 pt-4 contact-text shadow" data-aos="fade-in-left" data-aos-duration="800">
-        <div class="mb-3 ">
-          <h5 class="text-uppercase pt-3 fw-bold">Get in Touch</h5>
-          <p class="fs-2 pb-3 bprder-2 border-bottom">Have questions or need assistance? <br> Contact us today!</p>
-        </div>
-        <div class="contact-details">
-          <div class="d-inline-flex align-items-center mb-3">
-            <div class="contact-icon">
-              <i class="bi bi-telephone-forward "></i>
+        <div class="col-sm-12 col-md-6 col-lg-6 pt-4 contact-text shadow" data-aos="fade-in-left"
+          data-aos-duration="800">
+          <div class="mb-3 ">
+            <h5 class="text-uppercase pt-3 fw-bold">Get in Touch</h5>
+            <p class="fs-2 pb-3 bprder-2 border-bottom">Have questions or need assistance? <br> Contact us today!</p>
+          </div>
+          <div class="contact-details">
+            <div class="d-inline-flex align-items-center mb-3">
+              <div class="contact-icon">
+                <i class="bi bi-telephone-forward "></i>
+              </div>
+              <div class="ps-2">
+                <h5 class="text-uppercase text-light">Phone</h5>
+                <p class="fs-4">+2348167857017</p>
+              </div>
             </div>
-            <div class="ps-2">
-              <h5 class="text-uppercase text-light">Phone</h5>
-              <p class="fs-4">+2348167857017</p>
+            <div class="d-inline-flex align-items-center mb-3">
+              <div class="contact-icon">
+                <i class="bi bi-envelope-at"></i>
+              </div>
+              <div class="ps-2">
+                <h5 class="text-uppercase text-light">Email</h5>
+                <p class="fs-4">ojololaomowumi@gmail.com</p>
+              </div>
             </div>
-          </div> 
-          <div class="d-inline-flex align-items-center mb-3">
-            <div class="contact-icon">
-              <i class="bi bi-envelope-at"></i>
+            <div class="d-inline-flex align-items-center mb-3">
+              <div class="contact-icon">
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="ps-2">
+                <h5 class="text-uppercase text-light">Address</h5>
+                <p class="fs-4">Mention your service location or office if applicable.</p>
+              </div>
             </div>
-            <div class="ps-2">
-              <h5 class="text-uppercase text-light">Email</h5>
-              <p class="fs-4">ojololaomowumi@gmail.com</p>
-            </div>
-          </div> 
-          <div class="d-inline-flex align-items-center mb-3">
-            <div class="contact-icon">
-              <i class="bi bi-geo-alt"></i>
-            </div>
-            <div class="ps-2">
-              <h5 class="text-uppercase text-light">Address</h5>
-              <p class="fs-4">Mention your service location or office if applicable.</p>
-            </div>
-          </div> 
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!--===== CONTACT START ENDS========-->
+    </div>
+  </section>
+  <!--===== CONTACT START ENDS========-->
 
 
-<!--===== FOOTER START ========-->
-<footer class="footer">
-  <div class="container">
-    <div class="row g-3 align-items-start">
-      <div class="col-sm-12 col-md-4 col-lg-4">
-        <div class="d-inline-flex align-items-center logo-box">
-          <img src="images/images.png" alt="">
-          <h1>PHUMLET MEDIA</h1>
+  <!--===== FOOTER START ========-->
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-3 align-items-start">
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <div class="d-inline-flex align-items-center logo-box">
+            <img src="images/images.png" alt="">
+            <h1>PHUMLET MEDIA</h1>
+          </div>
+          <p>PHUMLET MEDIA have been licensed by NIMC.
+            We provide reliable solutions for your NIN updates, document retrieval, and registrations.</p>
         </div>
-        <p>PHUMLET MEDIA have been licensed by NIMC.
-          We provide reliable solutions for your NIN updates, document retrieval, and registrations.</p>
-      </div>
-      <div class="col-sm-12 col-md-4 col-lg-4 ">
+        <div class="col-sm-12 col-md-4 col-lg-4 ">
           <div class="footer-link">
             <h4>LEGAL LINKS</h4>
             <div class="links-box">
@@ -490,88 +468,95 @@
             <div class="links-box">
               <a href="#">
                 <i class="bi bi-diamond-fill"></i>
-              Privacy Policy
+                Privacy Policy
               </a>
             </div>
             <div class="links-box">
               <a href="#">
                 <i class="bi bi-diamond-fill"></i>
-            Refund Policy
+                Refund Policy
               </a>
             </div>
-    </div>
-   
-  </div>
-  <div class="col-sm-12 col-md-4 col-lg-4">
-    <div class="footer-info">
-      <div class="info-heading">
-        <h4>OFFICIAL INFO</h4>
-      </div>
-      <div class="info-box">
-        <p>
-          <i class="bi bi-telephone"></i>
-          08167857017
-        </p>
-      </div>
-      <div class="info-box">
-        <p>
-          <i class="bi bi-envelope"></i>
-          ojololaomowumi@gmail.com
-        </p>
-      </div>
-      <div class="info-box">
-        <p>
-          <i class="bi bi-geo-alt"></i>
-          Mention your service location or office
-        </p>
-      </div>
-  </div>
-  <div class="social-links">
-    <a href="#">
-      <i class="bi bi-whatsapp"></i>
-    </a>
-    <a href="#">
-      <i class="bi bi-facebook"></i>
-    </a>
-    <a href="#">
-      <i class="bi bi-instagram"></i>
-    </a>
-    <a href="#">
-      <i class="bi bi-tiktok"></i>
-    </a>
+          </div>
 
-  </div>
-    </div>
-  </div>
-</footer>
-
-<div class="copyright-area">
-  <div class="container">
-        <div class="copyright">
-          <p>Copyright @2024 ChiperHub. All Rights Reserved</p>
         </div>
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <div class="footer-info">
+            <div class="info-heading">
+              <h4>OFFICIAL INFO</h4>
+            </div>
+            <div class="info-box">
+              <i class="bi bi-telephone"></i>
+              <p>
+                08167857017
+              </p>
+            </div>
+            <div class="info-box">
+              <i class="bi bi-envelope"></i>
+              <p>
+                ojololaomowumi@gmail.com
+              </p>
+            </div>
+            <div class="info-box">
+              <i class="bi bi-geo-alt"></i>
+              <p>
+                Mention your service location or office
+              </p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="#">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="bi bi-tiktok"></i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+  </footer>
+
+  <div class="copyright-area">
+    <div class="container">
+      <div class="copyright">
+        <p>Copyright @2024 ChiperHub. All Rights Reserved</p>
+      </div>
+    </div>
   </div>
-</div>
 
 
 
 
 
-   <!--===== JS ========-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.js" integrity="sha512-tOyzsVuGuz0il5EcXFi/qA5DI4BNLna4gHbWn+HbQBP0jmRhyqMKup24fzyKnxSX0jBxt2+qStqwwHDIh5TaGA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="/assets/js/main.js"></script>
+  <!--===== JS ========-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.js"
+    integrity="sha512-tOyzsVuGuz0il5EcXFi/qA5DI4BNLna4gHbWn+HbQBP0jmRhyqMKup24fzyKnxSX0jBxt2+qStqwwHDIh5TaGA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/assets/js/main.js"></script>
 
-<script>
-  AOS.init({
-    duration: 1000, 
-    once: true, 
-    easing: 'ease-in-out',
-  });
-  AOS.refresh();
-</script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: 'ease-in-out',
+    });
+    AOS.refresh();
+  </script>
 
-  </body>
+</body>
+
 </html>

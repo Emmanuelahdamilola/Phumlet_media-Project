@@ -74,6 +74,54 @@ section {
   }
 }
 
+.brand-logo{
+  color: var(--green);
+  font-weight: bolder;
+}
+
+.navbar-nav .nav-link{
+  color: var(--dark-green);
+  font-weight: bold;
+}
+.navbar-nav .nav-link:hover{
+  color: var(--light-green);
+}
+
+.navbar-nav .nav-link.active{
+  color: var(--light-green);
+}
+
+.apply-btn a{
+  background-color: var(--green);
+  border-radius: 0;
+  font-size: 16px;
+  color: var(--light);
+  padding: 5px;
+}
+.apply-btn a:hover{
+  background-color: var(--dark-green);
+  color: var(--light);
+}
+
+@media (max-width:768px){
+  .brand-logo{
+    font-size: 16px;
+    padding-left: 20px;
+
+  }
+  .navbar-nav{
+    padding-left: 20px;
+  }
+  .navbar-nav .nav-link{
+    font-size: 14px;
+  }
+  .apply-btn{
+    padding-left: 20px;
+  }
+  .apply-btn a{
+    font-size: 14px;
+  }
+}
 /*===== HERO SECTION========*/
 .hero{
   position: relative;
@@ -119,28 +167,26 @@ section {
   -o-transition: all 0.2s ease-in-out;
   z-index: -2;
 }
-.hero-text{
+
+.hero-heading{
+  overflow-y: hidden;
   width: 60%;
-  height: auto;
-  text-align: center;
 }
-.hero-text .link-box{
-  padding-top: 20px;
-  padding-left: 20px;
+.hero-heading h1{
+  font-size: 50px;
+
 }
- .link-box .btn{
-  border: 2px solid var(--light) ;
-  padding: 12px 28px;
-  border-radius: 0;
+.hero-heading p{
+  font-size: 20px !important;
+  font-style: italic;
+}
+.hero-heading a{
+  padding: 10px 24px;
   font-size: 20px;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: var(--white);
-  transition: 0.2s ease-in-out;
-  
 }
-.link-box .btn:hover{
-  background-color: var(--green);
+.hero-heading a:hover{
+  border-color: var(--light-green) !important;
+  color: var(--light-green) !important;
 }
 
 @keyframes increase{
@@ -153,22 +199,23 @@ section {
 }
 
 @media (max-width:768px){
-.hero-text{
-  width: 100% !important;
-}
-.hero-text h1{
-  padding-top: 80px;
-  font-size: 25px;
-}
-.hero-text p{
-  font-size: 16px !important;
-  padding-top: 10px !important;
-}
+  .hero{
+    height: 80vh;
 
-.link-box{
-  margin-right: 20px;
-}
-
+  }
+  .hero-heading{
+    width: 100%;
+  }
+  .hero-heading h1{
+    font-size: 28px;
+  }
+  .hero-heading p{
+    font-size: 16px !important;
+  }
+  .hero-heading a{
+    padding: 5px 10px;
+    font-size: 14px;
+  }
 }
 
 /*===== ABOUT SECTION========*/
@@ -512,6 +559,10 @@ section {
   font-size: 14px;
   margin-right: 12px;
 }
+.info-box{
+  display: flex;
+  align-items: center;
+}
 .info-box p:hover{
   color: #34dc75;
   text-decoration: underline;
@@ -575,6 +626,9 @@ section {
   }
   .links-box a{
    font-size: 14px;
+  }
+  .social-links a{
+    font-size: 16px;
   }
   .copyright p{
     font-size: 14px;
