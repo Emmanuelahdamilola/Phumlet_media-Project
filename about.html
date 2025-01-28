@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Phumlet Media</title>
+
+    <!--===== CSS ========-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css"
+        integrity="sha512-uHuCigcmv3ByTqBQQEwngXWk7E/NaPYP+CFglpkXPnRQbSubJmEENgh+itRDYbWV0fUZmUz7fD/+JDdeQFD5+A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css"
+        integrity="sha512-RWhcC19d8A3vE7kpXq6Ze4GcPfGe3DQWuenhXAbcGiZOaqGojLtWwit1eeM9jLGHFv8hnwpX3blJKGjTsf2HxQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.css"
+        integrity="sha512-UhvuUthI9VM4N3ZJ5o1lZgj2zNtANzr3zyucuZZDy67BO6Ep5+rJN2PST7kPj+fOI7M/7wVeYaSaaAICmIQ4sQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="assets/css/main.css">
+
+
+    <!-- <link rel="stylesheet" href="assets/css/mediaquery.css"> -->
+
+    <!--===== JQUERY ========-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<style>
+    /*===== ROOT ========*/
+    :root {
+        --green: #009739;
+        --dark-green: #046e2b;
+        --light-green: #34dc75;
+        --white: #ffffff;
+        --gray: #d5d4d4;
+        --light: #f8f8ff;
+        --black: #000000;
+    }
+
+    .about {
+        width: 100%;
+        height: auto;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/NIN-and-PVC.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0;
+        background-attachment: fixed;
+        margin-bottom: 0;
+    }
+
+    .CTA {
+        background-color: var(--green);
+        color: var(--white);
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+
+    .CTA h2 {
+        font-weight: bolder;
+    }
+
+    .CTA p {
+        text-align: center;
+        font-style: italic;
+        font-size: 20px;
+    }
+
+    .CTA a, .about-heading a {
+        display: flex;
+        justify-content: center;
+        color: var(--white);
+        font-size: 16px;
+    }
+
+    .CTA a:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width:768px) {
+        .about-heading{
+            padding: 30px !important;
+        } 
+        .about-heading h1{
+            padding: 10px !important;
+        }
+        .CTA {
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .CTA h2 {
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
+        .CTA p {
+            font-size: 16px;
+        }
+
+        .CTA a {
+            font-size: 12px;
+        }
+    }
+</style>
+
+<body class="body">
+    <div class="top-links">
+        <div class="container py-2">
+            <div class=" d-flex justify-content-between align-item-center">
+                <div class="mail">
+                    <p>
+                        <i class="bi bi-envelope pe-1"></i>
+                        ojololaomowumi@gmail.com
+                    </p>
+                </div>
+                <div class="socials">
+                    <a href="#">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--===== HEAD STARTS ========-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand brand-logo" href="#">PHUMLET MEDIA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="#">FAQ</a>
+                    <a class="nav-link" href="#">Contact Us</a>
+
+                </div>
+                <div class="apply-btn">
+                    <a href="#" class="btn"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        APPLY NOW
+                        <i class="bi bi-arrow-right-circle ps-1"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!--===== HEAD END ========-->
+
+
+    <!--===== ABOUT START ========-->
+    <div class="about bg-white" id="about">
+        <div class="py-5 about-heading">
+            <h1 class="display-4 text-center text-white fw-bold">ABOUT US</h1>
+            <a href="index.html">
+                <i class="bi bi-arrow-left-short"></i>
+                Back to Home
+            </a>
+        </div>
+        <div class="mt-5">
+            <div class="card mb-0 shadow-0" style="width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-4 d-flex img align-items-center">
+                        <img src="images/NIMC-1200x1200-1-1024x1024.jpeg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title display-5 fw-bold">PHUMLET MEDIA</h5>
+                            <p class="card-text">
+                                At Phumlet Media, we believe that accessing critical personal and business services
+                                should be simple, efficient, and stress-free. That’s why we provide a diverse range of
+                                tailored solutions designed to meet your unique needs. From NIN registration and updates
+                                to business incorporation, certificate retrieval, and beyond, our goal is to simplify
+                                complex processes and ensure you get the results you need without unnecessary delays.
+                            </p>
+                            <p>
+                                Whether you’re an individual seeking hassle-free documentation or a business looking to
+                                establish a solid foundation, Phumlet Media is here to guide you every step of the way.
+                                With our expertise, dedication to excellence, and customer-first approach, we make it
+                                easier for you to focus on what truly matters while we handle the rest.
+                            </p>
+                            <h4>Our Vision:</h4>
+                            <p class="card-text fs-4"><small class="text-body-secondary">To become the go-to platform
+                                    for hassle-free
+                                    documentation services in Nigeria and beyond.
+                                </small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--===== ABOUT END ========-->
+    <div class="CTA">
+        <h2 class="text-center">Ready to simplify your personal and business needs?</h2>
+        <p>Let Phumlet Media handle the details while you focus on what matters most.</p>
+        <a href="#">Get started today and experience the difference!</a>
+    </div>
+    <!--===== FOOTER START ========-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-3 align-items-start">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="d-inline-flex align-items-center logo-box">
+                        <img src="images/images.png" alt="">
+                        <h1>PHUMLET MEDIA</h1>
+                    </div>
+                    <p>PHUMLET MEDIA have been licensed by NIMC.
+                        We provide reliable solutions for your NIN updates, document retrieval, and registrations.</p>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4 ">
+                    <div class="footer-link">
+                        <h4>LEGAL LINKS</h4>
+                        <div class="links-box">
+                            <a href="#">
+                                <i class="bi bi-diamond-fill me-2"></i>
+                                Terms & Conditions
+                            </a>
+                        </div>
+                        <div class="links-box">
+                            <a href="#">
+                                <i class="bi bi-diamond-fill"></i>
+                                Privacy Policy
+                            </a>
+                        </div>
+                        <div class="links-box">
+                            <a href="#">
+                                <i class="bi bi-diamond-fill"></i>
+                                Refund Policy
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="footer-info">
+                        <div class="info-heading">
+                            <h4>OFFICIAL INFO</h4>
+                        </div>
+                        <div class="info-box">
+                            <i class="bi bi-telephone"></i>
+                            <p>
+                                08167857017
+                            </p>
+                        </div>
+                        <div class="info-box">
+                            <i class="bi bi-envelope"></i>
+                            <p>
+                                ojololaomowumi@gmail.com
+                            </p>
+                        </div>
+                        <div class="info-box">
+                            <i class="bi bi-geo-alt"></i>
+                            <p>
+                                Mention your service location or office
+                            </p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <div class="copyright-area">
+        <div class="container">
+            <div class="copyright">
+                <p>Copyright @2024 ChiperHub. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--===== JS ========-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.js"
+        integrity="sha512-tOyzsVuGuz0il5EcXFi/qA5DI4BNLna4gHbWn+HbQBP0jmRhyqMKup24fzyKnxSX0jBxt2+qStqwwHDIh5TaGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assets/js/main.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-in-out',
+        });
+        AOS.refresh();
+    </script>
+
+</body>
+
+</html>
