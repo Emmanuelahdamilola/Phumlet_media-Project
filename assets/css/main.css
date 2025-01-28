@@ -42,34 +42,6 @@ section {
   padding: 0px;
 }
 
-.theme-btn {
-  background: var(--green);
-  margin-right: 14px;
-  padding: 4px 16px !important;
-  overflow-y: hidden;
-  font-size: 14px;
-  font-weight: 600;
-  border: none;
-  transition: background-color 0.4s, color 0.4s, border 0.4s;
-  color: var(--light);
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.theme-btn:hover {
-  background: var(--dark-green);
-  color: var(--white);
-}
-
-.theme-btn a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.theme-btn a:hover {
-  color: inherit;
-}
-
 .button{
   border-radius: 0;
   background-color: var(--dark-green);
@@ -81,10 +53,31 @@ section {
   background-color: var(--green);
   color: var(--white);
 }
-/*===== HEADER SECTION========*/
+
+.top-links{
+  background-color: var(--green);
+  height: 40px;
+  overflow-y: hidden;
+
+}
+.mail p{
+  color: var(--white);
+}
+.socials a{
+  color: var(--white);
+  padding-left: 5px;
+}
+
+@media (max-width:768px){
+  .top-links{
+    display: none;
+  }
+}
+
+/*===== HERO SECTION========*/
 .hero{
   position: relative;
-  height: 100vh;
+  height: 120vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -409,7 +402,6 @@ section {
   text-align: center;
   font-size: 35px;
 }
-
 .contact-text{
   background: var(--green);
   color: var(--green);
@@ -428,25 +420,36 @@ section {
   .container{
     padding: 0 !important;
   }
+  .contact .btn-message{
+    padding: 8px 16px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+  }
   .contact-text{
     min-width: 100%;
-    padding: 20px;
-    margin-top: 30px;
+    padding: 30px;
+    margin-top: 20px;
+  }
+  .contact-text p{
+    font-size: 16px !important;
   }
   .contact-icon{
     margin-right: 0px;
   }
   .contact-icon i{
-    color: var(--light);
     font-size: 18px;
   }
-  .contact-text p{
-    font-size: 14px;
+  .contact-text .contact-details p{
+    font-size: 14px !important;
   }
-  .contact-text h5{
-    font-size: 14px;
+  .contact-text .contact-details h5{
+    font-size: 14px !important;
   }
-  
+  .contact-icon{
+    padding-right: 10px;
+  }
+
   form{
     width: 100%;
   }
@@ -513,6 +516,26 @@ section {
   color: #34dc75;
   text-decoration: underline;
 }
+.social-links{
+  padding-top: 10px;
+}
+.social-links a{
+  color: var(--light);
+  font-weight: 300;
+  transition: .3s ease-in-out;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.social-links a:hover{
+  color: #34dc75;
+}
+
+.copyright-area{
+  padding-top: 20px;
+}
+.copyright p{
+  text-align: center;
+}
 
 @media (max-width:768px){
   .footer{
@@ -524,10 +547,36 @@ section {
     padding-left: 10px;
   }
   .footer .logo-box img{
-    width: 120px;
-    height: 80px;
+    width: 100px;
+    height: 70px;
   }
   .footer .logo-box h1{
     font-size: 25px;
+  }
+ 
+  .info-heading h4{
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+  .info-box p{
+    font-size: 14px;
+  }
+  .footer-link h4{
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+  .links-box{
+    padding-bottom: 10px;
+  }
+  .links-box i{
+    color:#34dc75;
+    font-size: 12px;
+    margin-right: 12px;
+  }
+  .links-box a{
+   font-size: 14px;
+  }
+  .copyright p{
+    font-size: 14px;
   }
 }
