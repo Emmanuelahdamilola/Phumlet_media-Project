@@ -50,7 +50,7 @@
         --black: #000000;
     }
 
-    .about {
+    .contact {
         width: 100%;
         height: auto;
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/NIN-and-PVC.png);
@@ -79,7 +79,8 @@
         font-size: 20px;
     }
 
-    .CTA a, .about-heading a {
+    .CTA a,
+    .heading a {
         display: flex;
         justify-content: center;
         color: var(--white);
@@ -91,12 +92,17 @@
     }
 
     @media (max-width:768px) {
-        .about-heading{
+        .heading {
             padding: 30px !important;
-        } 
-        .about-heading h1{
+        }
+
+        .heading h1 {
             padding: 10px !important;
         }
+        .container-fluid{
+        padding: 10px !important;
+    }
+
         .CTA {
             padding: 10px;
             margin-bottom: 20px;
@@ -157,9 +163,9 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav mx-auto">
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="about.html">About</a>
                     <a class="nav-link" href="service">Services</a>
-                    <a class="nav-link" href="#">FAQ</a>
+                    <a class="nav-link" href="faq.html">FAQ</a>
                     <a class="nav-link" href="#">Contact Us</a>
 
                 </div>
@@ -176,50 +182,113 @@
     </nav>
     <!--===== HEAD END ========-->
 
-
-    <!--===== ABOUT START ========-->
-    <div class="about bg-white" id="about">
-        <div class="py-5 about-heading">
-            <h1 class="display-4 text-center text-white fw-bold">ABOUT US</h1>
+    <!--===== CONTACT START ========-->
+    <section id="contact" class="contact">
+        <div class="py-5 heading">
+            <h1 class="display-4 text-center text-white fw-bold">CONTACT US</h1>
             <a href="index.html">
                 <i class="bi bi-arrow-left-short"></i>
                 Back to Home
             </a>
         </div>
-        <div class="mt-5">
-            <div class="card mb-0 shadow-0" style="width: 100%;">
-                <div class="row g-0">
-                    <div class="col-md-4 d-flex img align-items-center">
-                        <img src="images/NIMC-1200x1200-1-1024x1024.jpeg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title display-5 fw-bold">PHUMLET MEDIA</h5>
-                            <p class="card-text">
-                                At Phumlet Media, we believe that accessing critical personal and business services
-                                should be simple, efficient, and stress-free. That’s why we provide a diverse range of
-                                tailored solutions designed to meet your unique needs. From NIN registration and updates
-                                to business incorporation, certificate retrieval, and beyond, our goal is to simplify
-                                complex processes and ensure you get the results you need without unnecessary delays.
-                            </p>
-                            <p>
-                                Whether you’re an individual seeking hassle-free documentation or a business looking to
-                                establish a solid foundation, Phumlet Media is here to guide you every step of the way.
-                                With our expertise, dedication to excellence, and customer-first approach, we make it
-                                easier for you to focus on what truly matters while we handle the rest.
-                            </p>
-                            <h4>Our Vision:</h4>
-                            <p class="card-text fs-4"><small class="text-body-secondary">To become the go-to platform
-                                    for hassle-free
-                                    documentation services in Nigeria and beyond.
-                                </small></p>
+        <div class="container-fluid bg-white p-5">
+            <div class="row g-5 d-flex justify-content-center">
+                <div class="col-sm-12 col-md-5 col-lg-5">
+                    <form class="bg-white py-4 px-4 rounded shadow ">
+                        <div>
+                            <h5 class="text-uppercase pt-3 fw-bold">Ask Us Anything</h5>
+                            <p class="display-5 pb-3">Write Message</p>
+                            <h6 class="fw-bold">Personal Details</h6>
                         </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="First name" aria-label="First name"
+                                    required>
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="emailtext" class="form-control" placeholder="Email" aria-label="Email"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Phone" aria-label="Phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Subject " aria-label="Subject"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="aboutUs" class="form-label">How did you heard about us?</label>
+                            <select id="aboutUs" class="form-select" required>
+                                <option></option>
+                                <option>Web</option>
+                                <option>Google</option>
+                                <option>Facebook</option>
+                                <option>Friend</option>
+                                <option>Newspaper</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-message">
+                            <i class="bi bi-send me-2"></i>
+                            SEND MESSAGE</button>
+                    </form>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-4 pt-4 contact-text shadow" data-aos="fade-in-left"
+                    data-aos-duration="800">
+                    <div class="mb-3 ">
+                        <h5 class="text-uppercase pt-3 fw-bold">Get in Touch</h5>
+                        <p class="fs-2 pb-3 border-bottom">Have questions or need assistance? <br> Contact us
+                            today!</p>
                     </div>
+                    <div class="info-box d-flex align-item-center border-bottom">
+                        <i class="bi bi-telephone fs-3 text-white"></i>
+                        <p class="fs-4 py-4 px-2">
+                            08167857017
+                        </p>
+                    </div>
+                    <div class="info-box d-flex align-item-center border-bottom">
+                        <i class="bi bi-envelope fs-3 text-white"></i>
+                        <p class="fs-4 py-4 px-2">
+                            ojololaomowumi@gmail.com
+                        </p>
+                    </div>
+                    <div class="info-box d-flex align-item-center">
+                        <i class="bi bi-geo-alt fs-2 text-white"></i>
+                        <p class="fs-4 py-4 px-3">
+                            Mention your service location or office
+                        </p>
+                    </div>
+                    <div class="social-links d-flex justify-content-center">
+                        <a href="#">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+    
+                    </div>
+    
                 </div>
             </div>
         </div>
-    </div>
-    <!--===== ABOUT END ========-->
+    </section>
+    <!--===== CONTACT ENDS========-->
+    <hr>
     <div class="CTA">
         <h2 class="text-center">Ready to simplify your personal and business needs?</h2>
         <p>Let Phumlet Media handle the details while you focus on what matters most.</p>
