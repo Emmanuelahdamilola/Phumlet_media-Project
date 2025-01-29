@@ -103,7 +103,7 @@ section {
   color: var(--light);
 }
 
-@media (max-width:768px){
+@media only screen and (max-width:700px){
   .brand-logo{
     font-size: 16px;
     padding-left: 20px;
@@ -120,6 +120,26 @@ section {
   }
   .apply-btn a{
     font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  .brand-logo{
+    font-size: 25px;
+    padding-left: 30px;
+
+  }
+  .navbar-nav{
+    padding-left: 10px;
+  }
+  .navbar-nav .nav-link{
+    font-size: 18px;
+  }
+  .apply-btn{
+    padding-left: 10px;
+  }
+  .apply-btn a{
+    font-size: 18px;
   }
 }
 /*===== HERO SECTION========*/
@@ -198,7 +218,7 @@ section {
   }
 }
 
-@media (max-width:768px){
+@media only screen and (max-width:700px){
   .hero{
     height: 80vh;
 
@@ -207,10 +227,12 @@ section {
     width: 100%;
   }
   .hero-heading h1{
-    font-size: 28px;
+    font-size: 25px;
+    padding: 0px 20px;
   }
   .hero-heading p{
-    font-size: 16px !important;
+    font-size: 14px !important;
+    padding: 10px 20px;
   }
   .hero-heading a{
     padding: 5px 10px;
@@ -218,6 +240,26 @@ section {
   }
 }
 
+@media only screen and (min-width: 701px) {
+  .hero{
+    height: 100vh;
+
+  }
+  .hero-heading{
+    width: 100%;
+  }
+  .hero-heading h1{
+    font-size: 40px;
+  }
+  .hero-heading p{
+    font-size: 25px !important;
+    padding: 10px 20px;
+  }
+  .hero-heading a{
+    padding: 8px 16px;
+    font-size: 18px;
+  }
+}
 /*===== ABOUT SECTION========*/
 .about{
   padding: 50px 20px;
@@ -254,15 +296,13 @@ section {
   color: var(--green);
 }
 
-@media (max-width:768px){
+@media (max-width:700px){
   .about{
     padding: 30px 10px;
   }
   .about img{
     height: 250px;
   }
-  
-
 .about .card-body h5{
   font-size: 30px;
   font-weight: bold;
@@ -284,6 +324,37 @@ section {
 }
 .about .card-text{
   font-size: 16px !important;
+}
+}
+
+@media only screen and (min-width: 701px){
+  .about{
+    padding: 30px 0;
+  }
+  .about img{
+    height: 350px;
+  }
+.about .card-body h5{
+  font-size: 35px;
+  font-weight: light;
+}
+.about .card-body p{
+  font-size: 18px;
+}
+.about  ul {
+  padding-left: 0px;
+}
+.about .about-list i{
+  color: var(--green);
+  font-size: 20px;
+  padding-right: 25px;
+}
+
+.about .about-list p{
+  font-size: 18px;
+}
+.about .card-text{
+  font-size: 18px;
 }
 }
 
@@ -331,6 +402,9 @@ section {
   color: var(--dark-green);
 }
 
+.service .card .card-body{
+  flex:0 0 auto;
+}
 .service .card .service-list .service-link{
   display: flex;
   flex-direction: row;
@@ -345,13 +419,40 @@ section {
 }
   
 
-@media (max-width:768px) {
+@media only screen and (max-width:700px) {
   .service .card{
     width: 100%;
   }
   .service .card .service-list .service-link{
     border-bottom: 0;
     padding-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 701px){
+  .service .card{
+    border: 1px solid var(--light-green);
+    width: auto;
+    min-height: 40rem;
+  }
+  .service-list {
+    margin-top: 0;
+    padding-top: 0 !important;
+  }
+  .service .card .card-body h5{
+    font-size: 25px ;
+  }
+  .service .card .card-body p{
+    font-size: 20px ;
+  }
+  .service .card .service-list .service-link{
+    padding-top: 10px;
+  } 
+  .service .card .service-list .service-link i{
+    font-size: 20px;
+  }
+  .service .card .service-list .service-link a{
+    font-size: 18px;
   }
 }
 
@@ -387,8 +488,7 @@ section {
 }
   
 
-@media (max-width:768px){
-  
+@media only screen and (max-width:700px){ 
 .testimonial {
   padding: 10px;
 }
@@ -417,6 +517,38 @@ section {
   font-style: italic;
 }
   
+}
+@media only screen and (min-width: 701px){
+  .testimonial {
+    padding: 20px;
+  }
+  
+  .testimonial .heading-box p{
+    font-size: 40px;
+  }
+  .testimonial .testimony-heading h5{
+    font-size: 25px;
+  }
+  .testimony-box{
+    width: 100%;
+  }
+  .testimony-box img{
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+  }
+  
+  .testimony-box h3{
+    font-size: 25px;
+  }
+  .testimony-box p{
+    font-size: 18px;
+  }
+
+  .testimony-image{
+    display: none;
+  }
+    
 }
 
 /* --===== CONTACT START ========-- */
@@ -460,7 +592,7 @@ section {
   color: var(--white);
 }
 
-@media (max-width:768px){
+@media only screen and (max-width:700px){
   .contact{
     padding: 10px;
   }
@@ -501,7 +633,50 @@ section {
     width: 100%;
   }
 }
+@media only screen and (min-width: 701px){
+  .contact{
+    padding: 20px;
+  }
+  .container{
+    padding: 0px !important;
+  }
+  .contact form .btn-message{
+    padding: 8px 16px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+  }
+  .contact-text{
+    padding: 20px;
+  }
+  .contact-text h5{
+    font-size: 30px;
+    text-align: center;
+  }
+  .contact-text p{
+    font-size: 18px !important;
+    text-align: center;
+  }
+  .contact-icon{
+    width: 50px;
+    background-color: var(--light);
+    margin-right: 0px;
+  }
+  .contact-box{
+    width: 100% !important;
+    padding: 20px !important;
+  }
+  .contact-icon i{
+    font-size: 35px;
+    color: var(--green);
+  }
+  .contact-box h6{
+    color: var(--light);
+    font-size: 18px;
 
+  }
+
+}
 /*===== FOOTER START ========*/
 .footer{
   background-color: var(--dark-green);
@@ -588,7 +763,7 @@ section {
   text-align: center;
 }
 
-@media (max-width:768px){
+@media only screen and  (max-width:700px){
   .footer{
     padding: 30px;
   }
@@ -632,5 +807,64 @@ section {
   }
   .copyright p{
     font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 701px){
+  .footer{
+    padding: 30px 0px !important;
+  }
+  .footer .container{
+    width: 100% !important;
+  }
+  .footer .logo-box{
+    width: 190px;
+    min-width: 190px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .footer .logo-box img{
+    width: 80px;
+    height: 60px;
+    padding-left: 0;
+  }
+  .footer .logo-box h1{
+    font-size: 20px !important;
+    padding-left: 5px;
+  }
+  .info-heading h4{
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+  .links{
+    justify-content: center;
+  }
+  .footer-link h4{
+    padding-bottom: 10px;
+    font-size: 22px;
+  }
+  .links-box{
+    padding-bottom: 10px;
+  }
+  .links-box i{
+    color:#34dc75;
+    font-size: 16px;
+    margin-right: 12px;
+  }
+  .links-box a{
+   font-size: 18px;
+  }
+  .info-box i{
+    font-size: 18px;
+  }
+  .info-box p{
+    font-size: 18px;
+  }
+  .social-links a{
+    font-size: 18px;
+  }
+  .copyright p{
+    font-size: 16px;
+    padding-bottom: 5x;
   }
 }
