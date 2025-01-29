@@ -50,7 +50,7 @@
         --black: #000000;
     }
 
-    .about {
+    .faq {
         width: 100%;
         height: auto;
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/NIN-and-PVC.png);
@@ -61,7 +61,23 @@
         background-attachment: fixed;
         margin-bottom: 0;
     }
-
+    .accordion{
+        border: none !important;
+    }
+    .faq h2{
+        color: var(--green);
+    }
+    .faq button{
+        background: var(--green);
+        color: var(--white);
+    }
+    .faq button.active{
+        background: var(--green);
+        color: var(--white);
+    }
+    .faq img{
+        width: 100%;
+    }
     .CTA {
         background-color: var(--green);
         color: var(--white);
@@ -79,7 +95,7 @@
         font-size: 20px;
     }
 
-    .CTA a, .about-heading a {
+    .CTA a, .heading a {
         display: flex;
         justify-content: center;
         color: var(--white);
@@ -91,11 +107,18 @@
     }
 
     @media (max-width:768px) {
-        .about-heading{
+        .heading{
             padding: 30px !important;
         } 
-        .about-heading h1{
+        .heading h1{
             padding: 10px !important;
+        }
+        .container-fluid{
+            padding: 10px !important;
+        }
+        .faq h2{
+            text-align: center;
+            
         }
         .CTA {
             padding: 10px;
@@ -177,49 +200,100 @@
     <!--===== HEAD END ========-->
 
 
-    <!--===== ABOUT START ========-->
-    <div class="about bg-white" id="about">
+    <!--===== FAQ START ========-->
+    <div class="faq bg-white" id="faq">
         <div class="py-5 about-heading">
-            <h1 class="display-4 text-center text-white fw-bold">ABOUT US</h1>
+            <h1 class="display-4 text-center text-white fw-bold">FAQS</h1>
             <a href="index.html">
                 <i class="bi bi-arrow-left-short"></i>
                 Back to Home
             </a>
         </div>
-        <div class="mt-5">
-            <div class="card mb-0 shadow-0" style="width: 100%;">
-                <div class="row g-0">
-                    <div class="col-md-4 d-flex img align-items-center">
-                        <img src="images/NIMC-1200x1200-1-1024x1024.jpeg" class="img-fluid rounded-start" alt="...">
+        <div class="container-fluid bg-white mt-5 p-5">
+            <div class="row g-3 d-flex justify-content-center align-item-center">
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div>
+                        <h2 class="display-5 fw-bolder">Frequent Asked Questions</h2>
+                        <p>After enrolment, NIMC issues a National Identification Number (NIN), which is a unique number that identifies an individual for life. It’s used to match a person’s biometric data and other information in the National Identity Database (NIDB). NIN is a number that is used to link all of a person’s information in Nigeria’s national database and to verify their identification. All citizens and legal residents in Nigeria, from age zero (birth) and above are eligible to enroll for their NIN.</p>
                     </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title display-5 fw-bold">PHUMLET MEDIA</h5>
-                            <p class="card-text">
-                                At Phumlet Media, we believe that accessing critical personal and business services
-                                should be simple, efficient, and stress-free. That’s why we provide a diverse range of
-                                tailored solutions designed to meet your unique needs. From NIN registration and updates
-                                to business incorporation, certificate retrieval, and beyond, our goal is to simplify
-                                complex processes and ensure you get the results you need without unnecessary delays.
-                            </p>
-                            <p>
-                                Whether you’re an individual seeking hassle-free documentation or a business looking to
-                                establish a solid foundation, Phumlet Media is here to guide you every step of the way.
-                                With our expertise, dedication to excellence, and customer-first approach, we make it
-                                easier for you to focus on what truly matters while we handle the rest.
-                            </p>
-                            <h4>Our Vision:</h4>
-                            <p class="card-text fs-4"><small class="text-body-secondary">To become the go-to platform
-                                    for hassle-free
-                                    documentation services in Nigeria and beyond.
-                                </small></p>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button active" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is NIMC (National Identity Management Commission)?
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                The NIMC (pronounced as “Neem-See”) is the primary legal institution in Nigeria mandated by law to institutionalize identity management system and regulate the identity sector. (NIMC Act 2007; Sections 1, 2, 5 and 6).
+                            </div>
+                          </div>
                         </div>
-                    </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                What is National Identity Management System (NIMS) ?
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                For your biometrics checks, we’ll work with NIMC. You will get your NIN through email or SMS once it has been finished.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                What is the National Identification Number (NIN)?
+                              </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                The National Identification Number-NIN (pronounced as “Neen”) is a unique number issued to a successful enrolled individual This number is randomly generated and it is issued for life.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Who should register and get a NIN?
+                              </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                All citizens and legal residents are eligible to enroll for their National Identification Number (NIN).
+                              </div>
+                            </div>
+                          </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                What are the benefits of the NIMS?
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                             <ul>
+                                <li>Uniquely Identifying Individuals</li>
+                                <li>It provides a platform where no one is excluded socially or financially</li>
+                                <li>It enables people to claim their entitlement.</li>
+                                <li>It helps to eliminate duplicate identities.</li>
+                                <li>It helps to eliminate fraud.</li>
+                             </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-5 col-lg-5">
+                    <img src="/images/faq.png" alt="faq image">
                 </div>
             </div>
         </div>
     </div>
-    <!--===== ABOUT END ========-->
+    <!--===== FAQ END ========-->
+
+
     <div class="CTA">
         <h2 class="text-center">Ready to simplify your personal and business needs?</h2>
         <p>Let Phumlet Media handle the details while you focus on what matters most.</p>
@@ -307,7 +381,7 @@
     <div class="copyright-area">
         <div class="container">
             <div class="copyright">
-                <p>Copyright @2024 ChiperHub. All Rights Reserved</p>
+                <p>Copyright @2025 Phumlet Media. All Rights Reserved</p>
             </div>
         </div>
     </div>
