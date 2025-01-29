@@ -67,9 +67,16 @@
     .faq h2{
         color: var(--green);
     }
+    .accordion-item{
+        border: none;
+    }
+    h2.accordion-header{
+        background-color: var(--light-green) !important;
+        color: var(--white) !important;
+    }
     .faq button{
         background: var(--green);
-        color: var(--white);
+        color: var(--white) !important;
     }
     .faq button.active{
         background: var(--green);
@@ -114,7 +121,7 @@
             padding: 10px !important;
         }
         .container-fluid{
-            padding: 10px !important;
+            padding: 15px !important;
         }
         .faq h2{
             text-align: center;
@@ -214,16 +221,16 @@
                 <div class="col-sm-12 col-md-6 col-lg-6">
                     <div>
                         <h2 class="display-5 fw-bolder">Frequent Asked Questions</h2>
-                        <p>After enrolment, NIMC issues a National Identification Number (NIN), which is a unique number that identifies an individual for life. It’s used to match a person’s biometric data and other information in the National Identity Database (NIDB). NIN is a number that is used to link all of a person’s information in Nigeria’s national database and to verify their identification. All citizens and legal residents in Nigeria, from age zero (birth) and above are eligible to enroll for their NIN.</p>
+                        <p>After enrollment, NIMC issues a unique National Identification Number (NIN) that links an individual’s biometric and personal data in Nigeria’s national database. It serves as a lifelong identifier for all citizens and legal residents from birth and is essential for identity verification.</p>
                     </div>
-                    <div class="accordion" id="accordionExample">
+                    <div class="accordion" id="accordion">
                         <div class="accordion-item">
                           <h2 class="accordion-header">
                             <button class="accordion-button active" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 What is NIMC (National Identity Management Commission)?
                             </button>
                           </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion">
                             <div class="accordion-body">
                                 The NIMC (pronounced as “Neem-See”) is the primary legal institution in Nigeria mandated by law to institutionalize identity management system and regulate the identity sector. (NIMC Act 2007; Sections 1, 2, 5 and 6).
                             </div>
@@ -235,7 +242,7 @@
                                 What is National Identity Management System (NIMS) ?
                             </button>
                           </h2>
-                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion">
                             <div class="accordion-body">
                                 For your biometrics checks, we’ll work with NIMC. You will get your NIN through email or SMS once it has been finished.
                             </div>
@@ -243,11 +250,11 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 What is the National Identification Number (NIN)?
                               </button>
                             </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordion">
                               <div class="accordion-body">
                                 The National Identification Number-NIN (pronounced as “Neen”) is a unique number issued to a successful enrolled individual This number is randomly generated and it is issued for life.
                               </div>
@@ -255,11 +262,11 @@
                           </div>
                           <div class="accordion-item">
                             <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                 Who should register and get a NIN?
                               </button>
                             </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordion">
                               <div class="accordion-body">
                                 All citizens and legal residents are eligible to enroll for their National Identification Number (NIN).
                               </div>
@@ -267,11 +274,11 @@
                           </div>
                         <div class="accordion-item">
                           <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                 What are the benefits of the NIMS?
                             </button>
                           </h2>
-                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordion">
                             <div class="accordion-body">
                              <ul>
                                 <li>Uniquely Identifying Individuals</li>
@@ -286,7 +293,7 @@
                       </div>
                 </div>
                 <div class="col-sm-12 col-md-5 col-lg-5">
-                    <img src="/images/faq.png" alt="faq image">
+                    <img src="/images/Lovepik_com-380136909-hand-drawn-online-business-faq-business-illustration-green-plant.png" alt="faq image" class="w-100 ">
                 </div>
             </div>
         </div>
