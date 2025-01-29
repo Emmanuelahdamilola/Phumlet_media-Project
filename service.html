@@ -50,7 +50,7 @@
         --black: #000000;
     }
 
-    .about {
+    .service {
         width: 100%;
         height: auto;
         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/NIN-and-PVC.png);
@@ -79,7 +79,7 @@
         font-size: 20px;
     }
 
-    .CTA a, .about-heading a {
+    .CTA a, .heading a {
         display: flex;
         justify-content: center;
         color: var(--white);
@@ -91,10 +91,10 @@
     }
 
     @media (max-width:768px) {
-        .about-heading{
+        .heading{
             padding: 30px !important;
         } 
-        .about-heading h1{
+        .heading h1{
             padding: 10px !important;
         }
         .CTA {
@@ -178,48 +178,123 @@
 
 
     <!--===== ABOUT START ========-->
-    <div class="about bg-white" id="about">
-        <div class="py-5 about-heading">
-            <h1 class="display-4 text-center text-white fw-bold">ABOUT US</h1>
-            <a href="index.html">
-                <i class="bi bi-arrow-left-short"></i>
-                Back to Home
-            </a>
-        </div>
-        <div class="mt-5">
-            <div class="card mb-0 shadow-0" style="width: 100%;">
-                <div class="row g-0">
-                    <div class="col-md-4 d-flex img align-items-center">
-                        <img src="images/NIMC-1200x1200-1-1024x1024.jpeg" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title display-5 fw-bold">PHUMLET MEDIA</h5>
-                            <p class="card-text">
-                                At Phumlet Media, we believe that accessing critical personal and business services
-                                should be simple, efficient, and stress-free. That’s why we provide a diverse range of
-                                tailored solutions designed to meet your unique needs. From NIN registration and updates
-                                to business incorporation, certificate retrieval, and beyond, our goal is to simplify
-                                complex processes and ensure you get the results you need without unnecessary delays.
-                            </p>
-                            <p>
-                                Whether you’re an individual seeking hassle-free documentation or a business looking to
-                                establish a solid foundation, Phumlet Media is here to guide you every step of the way.
-                                With our expertise, dedication to excellence, and customer-first approach, we make it
-                                easier for you to focus on what truly matters while we handle the rest.
-                            </p>
-                            <h4>Our Vision:</h4>
-                            <p class="card-text fs-4"><small class="text-body-secondary">To become the go-to platform
-                                    for hassle-free
-                                    documentation services in Nigeria and beyond.
-                                </small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <!--===== SERVICES START ========-->
+  <div class="service" id="service">
+    <div class="py-5 heading">
+        <h1 class="display-4 text-center text-white fw-bold">ABOUT US</h1>
+        <a href="index.html">
+            <i class="bi bi-arrow-left-short"></i>
+            Back to Home
+        </a>
     </div>
-    <!--===== ABOUT END ========-->
+    <div class="container-fluid bg-white p-3">
+      <div class="text-center heading-box">
+        <p class="display-5">Our Core Services</p>
+        <h5 class="fw-bold mb-4 fs-5">Explore our wide range of services tailored to meet your needs</h5>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-3 col-lg-3">
+          <div class="card">
+            <i class="bi bi-person-vcard"></i>
+            <div class="card-body">
+              <h5 class="card-title">NIN Services</h5>
+              <p class="card-text">We provide seamless support for all your NIN needs:</p>
+            </div>
+            <div class="service-list">
+              <div class="service-link">
+                <i class="bi bi-check-circle"></i>
+                <a href="#" class="card-link">New NIN Enrollment</a>
+              </div>
+              <div class="service-link">
+                <i class="bi bi-check-circle"></i>
+                <a href="#" class="card-link">Premium Plastic or Laminated Cards</a>
+              </div>
+              <div class="service-link">
+                <i class="bi bi-check-circle"></i>
+                <a href="#" class="card-link">Slip Retrieval and Error Resolution</a>
+              </div>
+              <div class="service-link">
+                <i class="bi bi-check-circle"></i>
+                <a href="#" class="card-link">Validation and Verification Services
+                </a>
+              </div>
+              <div class="service-link">
+                <i class="bi bi-check-circle"></i>
+                <a href="#" class="card-link">Updates: Name, Date of Birth, Address, and Phone Number
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3">
+          <div class="card ">
+            <i class="bi bi-briefcase-fill"></i>
+            <div class="card-body">
+              <h5 class="card-title">Business Services</h5>
+              <p class="card-text">Streamline your business setup and compliance with:</p>
+            </div>
+            <div class="service-list">
+              <div class="service-link">
+                <i class="bi bi-check-circle"></i>
+                <a href="#" class="card-link">Corporate Affairs Commission (CAC) Registration
+                </a>
+              </div>
+              <div class="service-link">
+                <i class="bi bi-check-circle"></i>
+                <a href="#" class="card-link">Tax Identification Number (TIN) Registration</a>
+              </div>
+              <div class="service-link">
+                <i class="bi bi-check-circle"></i>
+                <a href="#" class="card-link">Tax Promax Assistance</a>
+              </div>
+              <div class="service-link">
+                <i class="bi bi-check-circle"></i>
+                <a href="#" class="card-link">SCUML Compliance Services
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3">
+          <div class="card">
+            <i class="bi bi-mortarboard-fill"></i>
+            <div class="card-body">
+              <h5 class="card-title">Academic Documentation</h5>
+              <p class="card-text">Simplify your academic processes with:</p>
+            </div>
+            <div class="service-list">
+              <div class="service-link">
+                <i class="bi bi-check-circle"></i>
+                <a href="#" class="card-link">Certificate Retrieval (WAEC/NECO)</a>
+              </div>
+              <div class="service-link">
+                <i class="bi bi-check-circle"></i>
+                <a href="#" class="card-link">WAEC and NECO Exam Registration</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-3 col-lg-3">
+          <div class="card">
+            <i class="bi bi-badge-tm-fill"></i>
+            <div class="card-body">
+              <h5 class="card-title">Specialized Services</h5>
+              <p class="card-text">Safeguard your brand and ideas with our:</p>
+            </div>
+            <div class="service-list">
+              <div class="service-link">
+                <i class="bi bi-check-circle"></i>
+                <a href="#" class="card-link">Trademark Registration</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--===== SERVICES END ========-->
+
     <div class="CTA">
         <h2 class="text-center">Ready to simplify your personal and business needs?</h2>
         <p>Let Phumlet Media handle the details while you focus on what matters most.</p>
