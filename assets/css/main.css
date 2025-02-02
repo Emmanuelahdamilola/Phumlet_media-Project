@@ -369,91 +369,64 @@ section {
   color: var(--green) !important;
 }
 .service .card{
-  background: transparent;
+  background: var(--white);
   border: none;
-  width: 250px;
-  padding: 20px;
-
-}
-.service .card i{
-  font-size: 50px;
-  color: var(--green);
-  text-align: center;
-  padding-right: 15px;
 }
 .service .card .card-body{
   text-align: center;
 }
 .service .card .card-body h5{
+  font-size: 25px;
   color: var(--dark-green);
+  text-transform: uppercase;
+} 
+.service .card .card-body p{
+  font-size: 18px;
 }
-.service .card .service-list i{
+.service .card i{
   font-size: 20px;
-  margin-right: 10px;
-}
-.service .card .service-list a{
   color: var(--green);
-  font-size: 14px;
+  text-align: center;
+  padding-right: 10px;
+  
+}
+.service .card li a{
+  color: var(--green) !important;
+  font-size: 16px;
   font-weight: 200px;
-  padding-bottom: 10px;
   transition: .3s ease-in-out;
 }
-.service .card .service-list a:hover{
-  color: var(--dark-green);
+@media only screen and (max-width:700px){
+  .service{
+    padding-top: 30px;
+    margin: 25px;
+  }
+  .service .card{
+    border: none;
+  }
 }
-
-.service .card .card-body{
-  flex:0 0 auto;
+@media only screen and (min-width:701px){
+  .service{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    margin: 20px;
+  }
+.service .card .card-body h5{
+  font-size: 20px;
+} 
+.service .card .card-body p{
+  font-size: 16px;
 }
-.service .card .service-list .service-link{
+.service .card i{
+  font-size: 16px;
+}
+.service .card li{
   display: flex;
-  flex-direction: row;
   align-items: center;
-  border-bottom: 1px solid var(--gray);
-  padding-top: 20px;
-  width: auto;
-
 }
-.service .card .service-list .service-link:last-child{
-  border-bottom: 0;
+.service .card li a{
+  font-size: 14px;
 }
-  
-
-@media only screen and (max-width:700px) {
-  .service .card{
-    width: 100%;
-  }
-  .service .card .service-list .service-link{
-    border-bottom: 0;
-    padding-top: 10px;
-  }
-}
-
-@media only screen and (min-width: 701px){
-  .service .card{
-    border: 1px solid var(--light-green);
-    width: auto;
-    min-height: 40rem;
-  }
-  .service-list {
-    margin-top: 0;
-    padding-top: 0 !important;
-  }
-  .service .card .card-body h5{
-    font-size: 25px ;
-  }
-  .service .card .card-body p{
-    font-size: 20px ;
-  }
-  .service .card .service-list .service-link{
-    padding-top: 10px;
-  } 
-  .service .card .service-list .service-link i{
-    font-size: 20px;
-  }
-  .service .card .service-list .service-link a{
-    font-size: 18px;
-  }
 }
 
 /* --===== TESTIMONIAL START ========-- */
