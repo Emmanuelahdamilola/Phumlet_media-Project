@@ -62,6 +62,26 @@
         margin-bottom: 0;
     }
 
+    @media only screen and (max-width: 700px) {
+    .service {
+        padding-top: 0px;
+        margin: 0px;
+    }
+    .service .row{
+        padding: 20px !important;
+    }
+}
+
+@media only screen and (min-width: 701px) {
+    .service {
+        padding-top: 0px;
+        margin: 0px;
+    }
+    .service .row{
+        padding: 20px !important;
+    }
+}
+
     .CTA {
         background-color: var(--green);
         color: var(--white);
@@ -177,11 +197,10 @@
     <!--===== HEAD END ========-->
 
 
-    <!--===== ABOUT START ========-->
   <!--===== SERVICES START ========-->
   <div class="service" id="service">
     <div class="py-5 heading">
-        <h1 class="display-4 text-center text-white fw-bold">ABOUT US</h1>
+        <h1 class="display-4 text-center text-white fw-bold">OUR SERVICES</h1>
         <a href="index.html">
             <i class="bi bi-arrow-left-short"></i>
             Back to Home
@@ -192,104 +211,106 @@
         <p class="display-5">Our Core Services</p>
         <h5 class="fw-bold mb-4 fs-5">Explore our wide range of services tailored to meet your needs</h5>
       </div>
-      <div class="row justify-content-center">
-        <div class="col-sm-12 col-md-3 col-lg-3">
-          <div class="card">
-            <i class="bi bi-person-vcard"></i>
+      <div class="row g-3 px-5 py-4">
+        <div class="col-sm-12 col-md-4 col-lg-4" >
+          <div class="card shadow" data-aos="fade-right" data-aos-duration="600">
+            <img src="/images/card1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">NIN Services</h5>
               <p class="card-text">We provide seamless support for all your NIN needs:</p>
             </div>
-            <div class="service-list">
-              <div class="service-link">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
                 <i class="bi bi-check-circle"></i>
-                <a href="#" class="card-link">New NIN Enrollment</a>
-              </div>
-              <div class="service-link">
+                <a href="#">NIN PREMIUM PLASTIC/LAMINATED</a>
+              </li>
+              <li class="list-group-item">
                 <i class="bi bi-check-circle"></i>
-                <a href="#" class="card-link">Premium Plastic or Laminated Cards</a>
-              </div>
-              <div class="service-link">
+                <a href="#">CHANGE OF NAME</a>
+              </li>
+              <li class="list-group-item">
                 <i class="bi bi-check-circle"></i>
-                <a href="#" class="card-link">Slip Retrieval and Error Resolution</a>
-              </div>
-              <div class="service-link">
+                <a href="#">CHANGE OF DATE OF BIRTH</a>
+              </li>
+              <li class="list-group-item">
                 <i class="bi bi-check-circle"></i>
-                <a href="#" class="card-link">Validation and Verification Services
-                </a>
-              </div>
-              <div class="service-link">
+                <a href="#">CHANGE OF ADDRESS</a>
+              </li>
+              <li class="list-group-item">
                 <i class="bi bi-check-circle"></i>
-                <a href="#" class="card-link">Updates: Name, Date of Birth, Address, and Phone Number
-                </a>
-              </div>
-            </div>
+                <a href="#">CHANGE OF PHONE NUMBER</a>
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-check-circle"></i>
+                <a href="#">NIN VALIDATION</a>
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-check-circle"></i>
+                <a href="#">NIN MODIFICATION</a>
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-check-circle"></i>
+                <a href="#">NIN SLIP RETRIEVAL</a>
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-check-circle"></i>
+                <a href="#">NIN ENROLMENT</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="col-sm-12 col-md-3 col-lg-3">
-          <div class="card ">
-            <i class="bi bi-briefcase-fill"></i>
+        <div class="col-sm-12 col-md-4 col-lg-4" >
+          <div class="card shadow" data-aos="fade-up" data-aos-duration="700">
+            <img src="/images/card2.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Business Services</h5>
               <p class="card-text">Streamline your business setup and compliance with:</p>
             </div>
-            <div class="service-list">
-              <div class="service-link">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
                 <i class="bi bi-check-circle"></i>
-                <a href="#" class="card-link">Corporate Affairs Commission (CAC) Registration
-                </a>
-              </div>
-              <div class="service-link">
+                <a href="#">CAC REGISTRATION</a>
+              </li>
+              <li class="list-group-item">
                 <i class="bi bi-check-circle"></i>
-                <a href="#" class="card-link">Tax Identification Number (TIN) Registration</a>
-              </div>
-              <div class="service-link">
+                <a href="#">TAX IDENTIFICATION NUMBER (TIN)</a>
+              </li>
+              <li class="list-group-item">
                 <i class="bi bi-check-circle"></i>
-                <a href="#" class="card-link">Tax Promax Assistance</a>
-              </div>
-              <div class="service-link">
+                <a href="#">TAX PROMAX REGISTRATION</a>
+              </li>
+              <li class="list-group-item">
                 <i class="bi bi-check-circle"></i>
-                <a href="#" class="card-link">SCUML Compliance Services
-                </a>
-              </div>
-            </div>
+                <a href="#">TRADEMARK REGISTRATION</a>
+              </li>
+              <li class="list-group-item">
+                <i class="bi bi-check-circle"></i>
+                <a href="#">SCUML</a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="col-sm-12 col-md-3 col-lg-3">
-          <div class="card">
-            <i class="bi bi-mortarboard-fill"></i>
+        <div class="col-sm-12 col-md-4 col-lg-4" >
+          <div class="card shadow" data-aos="fade-left" data-aos-duration="800">
+            <img src="/images/card3.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Academic Documentation</h5>
               <p class="card-text">Simplify your academic processes with:</p>
             </div>
-            <div class="service-list">
-              <div class="service-link">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
                 <i class="bi bi-check-circle"></i>
-                <a href="#" class="card-link">Certificate Retrieval (WAEC/NECO)</a>
-              </div>
-              <div class="service-link">
+                <a href="#">WAEC/NECO REGISTRATION</a>
+              </li>
+              <li class="list-group-item">
                 <i class="bi bi-check-circle"></i>
-                <a href="#" class="card-link">WAEC and NECO Exam Registration</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-3 col-lg-3">
-          <div class="card">
-            <i class="bi bi-badge-tm-fill"></i>
-            <div class="card-body">
-              <h5 class="card-title">Specialized Services</h5>
-              <p class="card-text">Safeguard your brand and ideas with our:</p>
-            </div>
-            <div class="service-list">
-              <div class="service-link">
-                <i class="bi bi-check-circle"></i>
-                <a href="#" class="card-link">Trademark Registration</a>
-              </div>
-            </div>
+                <a href="#">WAEC CERTIFICATE RETRIEVAL</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+
 
     </div>
   </div>

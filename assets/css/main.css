@@ -174,12 +174,12 @@ section {
   -moz-transform: translateZ(0) scale(1.0, 1.0);
   -ms-transform: translateZ(0) scale(1.0, 1.0);
   transform:translateZ(0) scale(1.0, 1.0) ;
-  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.6)), url(/images/hero2.png);
+  background-image: linear-gradient(rgba(6, 78, 27, 0.9), rgba(5, 49, 28, 0.6)), url(/images/hero2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  animation: increase 60s linear 10ms infinite;
+  animation: increase 30s linear 5ms infinite;
   transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -220,7 +220,7 @@ section {
 
 @media only screen and (max-width:700px){
   .hero{
-    height: 80vh;
+    height: 60vh;
 
   }
   .hero-heading{
@@ -650,6 +650,63 @@ section {
   }
 
 }
+
+
+
+.CTA {
+  background-color: var(--green);
+  color: var(--white);
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.CTA h2 {
+  font-weight: bolder;
+}
+
+.CTA p {
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.CTA a{
+  display: flex;
+  justify-content: center;
+  color: var(--white);
+  font-size: 20px;
+}
+
+.CTA a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width:768px) {
+  .about-heading{
+      padding: 30px !important;
+  } 
+  .about-heading h1{
+      padding: 10px !important;
+  }
+  .CTA {
+      padding: 10px;
+      margin-bottom: 20px;
+  }
+
+  .CTA h2 {
+      font-weight: bolder;
+      font-size: 20px;
+  }
+
+  .CTA p {
+      font-size: 16px;
+  }
+
+  .CTA a {
+      font-size: 12px;
+  }
+}
+
 /*===== FOOTER START ========*/
 .footer{
   background-color: var(--dark-green);
