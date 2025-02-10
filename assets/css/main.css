@@ -58,7 +58,7 @@ section {
   background-color: var(--green);
   height: 40px;
   overflow-y: hidden;
-
+  padding-top: 10px;
 }
 .mail p{
   color: var(--white);
@@ -247,6 +247,8 @@ section {
   }
   .hero-heading{
     width: 100%;
+    height: auto;
+    overflow: hidden;
   }
   .hero-heading h1{
     font-size: 40px;
@@ -362,7 +364,7 @@ section {
 .service{
   padding-top: 30px;
   background: var(--light);
-  height: auto;
+  height: 100%;
   margin-bottom: 30px;
 }
 .service .heading-box p{
@@ -371,6 +373,7 @@ section {
 .service .card{
   background: var(--white);
   border: none;
+  overflow-y: hidden;
 }
 .service .card .card-body{
   text-align: center;
